@@ -1,0 +1,37 @@
+// creates and calculate dynamic grids
+
+.grid(@segments: 4, @margin: 0, @padding: @padding) {
+
+  .segments(@val) {
+    width: (99% / @val);
+  }
+
+
+    margin: @margin;
+    display: block;
+    .segments(@segments);
+  .box-sizing(border-box);
+   // padding: @padding;
+    float: left;
+    list-style: none;
+
+    .items {
+      padding: @padding;
+      overflow: hidden;
+    }
+
+  > li, > div {
+    //border-left: @border;
+    //border-bottom: @border;
+  }
+
+}
+
+.grid-container(@border: @border) {
+
+  border-right: @border;
+  border-top: @border;
+  .box-sizing(border-box);
+
+}
+

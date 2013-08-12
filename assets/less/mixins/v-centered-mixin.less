@@ -1,0 +1,77 @@
+//vertically center elements
+//based on http://tympanus.net/codrops/2013/07/14/justified-and-vertically-centered-header-elements/
+
+#verticals {
+
+  .v-centered() {
+    text-align: justify;
+    letter-spacing: 11px;
+    height: 8em;
+    padding: 2em;
+  
+
+  &::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+
+    > .v-wrapper, nav, div h1 {
+
+      display: inline-block;
+      vertical-align: middle;
+
+    }
+
+    > nav a {
+      padding: 0 0.63em;
+      white-space: nowrap;
+      height: 100%;
+    }
+
+    > nav a:last-child {
+      padding-right: 0;
+    }
+
+    > .v-wrapper {
+      width: 50%;
+      height: 100%;
+      text-align: left;
+    }
+
+    > .v-wrapper::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+  }
+
+  .mobile(){
+    /* mobile v-centered -- Media Queries */
+
+    height: auto;
+
+    > .box , .box h1, > nav {
+      height: auto;
+      width: auto;
+      display: auto;
+      //text-align: center ;
+    }
+
+
+  }
+  //main element display
+  .display() {
+
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+
+  .wrapper() {
+
+  }
+
+
+}

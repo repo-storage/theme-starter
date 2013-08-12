@@ -1,0 +1,79 @@
+.content(){
+
+  #content {
+    padding-top: 60px;
+    margin: 0px 0px @margins;
+  }
+
+  #content P {
+    margin: 0px 0px 40px;
+    margin-bottom: @margins;
+  }
+
+  #content ARTICLE {
+    margin: 0px 0px 40px;
+  }
+
+  SECTION#slideshows {
+    background-color: @background-color;
+    #theme-gradient > .radial();
+    > .container, div {
+       padding-bottom: @padding;
+    }
+  }
+
+  .post .readmore {
+
+    display: block;
+    padding: @padding;
+    text-align: right;
+    margin-top: @margins + 10;
+
+    a{
+      border: @border-dotted;
+      padding: @padding;
+
+    }
+
+  }
+   /** grids */
+  .folio{
+    .grid(3,0,10px);
+    //border: @border;
+  }
+
+  .grid {
+    //.grid-container;
+  }
+
+
+
+  /* SIDEBAR */
+  #sidebar{
+
+  }
+
+  #sidebar aside {
+    margin-bottom: @margins;
+    border-bottom: @border-dotted;
+  }
+
+  footer {
+    text-align: center;
+    margin-bottom: 60px;
+
+    > div {
+      text-align: left;
+    }
+  }
+
+  /** valign 404 */
+  .page-404 {
+
+      .v-center(600px);
+
+  }
+
+}
+
+

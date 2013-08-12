@@ -1,0 +1,140 @@
+//main font color -- start at the strongest hue
+@font-color: #3f3f3f;
+
+@header: 7.2;
+@titles: 5.8;
+@headlines: 3.6;
+@sub-headlines: 2.8;
+@primary-text:2.2;
+@default-text:1.7;
+@regular-text: 1.2;
+
+//change the color to set your primary-color : (text)
+@primary-color: #a3a3a3;
+//background color
+@background-color: #ffffff;
+//link color
+@links: @primary-color;
+@links-active: darken(@primary-color,20%);
+@links-hover: lighten(@primary-color,20%);
+//units
+@section-height: 700px;
+
+
+
+
+@section-width: 100%;
+//content-width
+@max-width: 1600px;
+@content-fluid: false;
+// conditional color
+
+.color-conditions(@_color, @level : 50%) when (lightness(@_color) >= 50%) {
+  color: darken(@_color, @level);
+}
+.color-conditions(@_color, @level : 50%) when (lightness(@_color) >= 50%) {
+  color: darken(@_color, @level);
+}
+
+
+//borders
+
+@border-color: darken(@background-color,15%);
+@border-radius: 0px;
+@border-size: 1px;
+@border-style: solid;
+@border: @border-style @border-size @border-color ;
+@border-dotted: dotted @border-size @border-color ;
+@border-dashed: dashed @border-size @border-color ;
+
+//comments
+@comment-width: 90%;
+//buttons
+@button-color: darken(@font-color,20%);
+@button-background-color: darken(@background-color, 10%);
+@button-background-image: none;
+//nav
+@nav-height: 80px;
+@nav-line-height: @nav-height ;
+@sub-nav-height: 60px;
+@nav-background-color: darken(@background-color,10%);
+@nav-background-image: none;
+@nav-color: @primary-color;
+@nav-hover-background-color: darken(@nav-background-color, 5%);
+@nav-hover-color: contrast(@nav-hover-background-color, darken(@nav-color,50%), lighten(@nav-color,50%));
+@nav-border: solid 1px darken(@nav-background-color,5%);
+@nav-hover-background-image: none;
+//font
+@theme-font: OpenSansRegular;
+@theme-font-semibold: OpenSansSemibold;
+@theme-font-bold: OpenSansBold;
+@theme-header-font: @theme-font-semibold;
+//links
+@links-hover: darken(@links,20%);
+@links-lighter: lighten(@links,20%);
+@links-darker: darken(@links-hover,20%);
+//set font sizes
+@base-font: 1.0;
+@body-font: 62%;
+@default-font-size: 1.4;
+@p-font-size: 1.6;
+@small-font: 1.1;
+
+@padding: 10px;
+@margins: 10px;
+//Header font-sizes automatically incremented
+@max-font-size: (@p-font-size + 6.2);
+@header-font-size: (@p-font-size + 5);
+@font-h1: (@p-font-size + 4.8) ;
+@font-h2: (@p-font-size + 2.4) ;
+@font-h3: (@p-font-size + 1.2) ;
+@font-h4: (@p-font-size + 0.6) ;
+@font-h5: (@p-font-size + 0.4) ;
+@min-font-size: (@p-font-size + 0.1);
+@line-height: 1.8;
+//mobile - font size
+@body-font: 62%;
+@mobile-default-font-size: 1.0;
+@mobile-small-font: .9;
+//Header font-sizes automatically incremented
+@mobile-max-font-size: (@base-font + 4.0);
+@mobile-header-font-size: (@base-font + 3.2);
+@mobile-font-h1: (@base-font + 2.8) ;
+@mobile-font-h2: (@base-font + 2.4) ;
+@mobile-font-h3: (@base-font + 1.2) ;
+@mobile-font-h4: (@base-font + 0.5) ;
+@mobile-font-h5: (@base-font + 0.2) ;
+@mobile-min-font-size: (@base-font + 0.1);
+@mobile-line-height: 1.2;
+//tablet
+@tablet-p-font-size: 1.4;
+//Header font-sizes automatically incremented
+@tablet-max-font-size: (@base-font + 5);
+@tablet-header-font-size: (@base-font + 4.2);
+@tablet-font-h1: (@base-font + 4.0) ;
+@tablet-font-h2: (@base-font + 3.0) ;
+@tablet-font-h3: (@base-font + 1.8) ;
+@tablet-font-h4: (@base-font + 1.1) ;
+@tablet-font-h5: (@base-font + 0.9) ;
+@tablet-min-font-size: (@base-font + 0.1);
+//color variations
+@primary-color5: darken(@primary-color, 5%);
+@primary-color10: darken(@primary-color, 10%);
+@primary-color20: darken(@primary-color, 20%);
+@primary-color30: darken(@primary-color, 30%);
+@primary-color40: darken(@primary-color, 40%);
+@primary-color50: darken(@primary-color, 50%);
+@primary-color60: darken(@primary-color, 60%);
+@primary-color70: darken(@primary-color, 70%);
+@primary-color80: darken(@primary-color, 80%);
+@primary-color90: darken(@primary-color, 90%);
+//color mixes
+@theme-color: @background-color;
+@theme-color-light1: lighten(spin(@theme-color, 5), 10%);
+@theme-color-light2: lighten(spin(@theme-color, 10), 20%);
+@theme-color-dark1: darken(spin(@theme-color, -5), 10%);
+@theme-color-dark2: darken(spin(@theme-color, -10), 20%);
+//cover
+@cover-background-color: @theme-color-dark2;
+
+
