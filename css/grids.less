@@ -10,7 +10,7 @@
     margin: @margin;
     display: block;
     .segments(@segments);
-  .box-sizing(border-box);
+    .box-sizing(border-box);
    // padding: @padding;
     float: left;
     list-style: none;
@@ -20,18 +20,25 @@
       overflow: hidden;
     }
 
-  > li, > div {
-    //border-left: @border;
-    //border-bottom: @border;
-  }
 
 }
 
 .grid-container(@border: @border) {
 
-  border-right: @border;
+  border-left: @border;
   border-top: @border;
-  .box-sizing(border-box);
+  padding: 0;
+  margin: 0;
+
+  > li, > div {
+    .box-sizing(border-box);
+    //border-left: @border;
+    border-bottom: @border;
+    &:nth-child(3n){
+    //
+      border-right: @border;
+    }
+  }
 
 }
 
