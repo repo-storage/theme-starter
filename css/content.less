@@ -1,7 +1,8 @@
 .content(){
 
   #content {
-    padding-top: 60px;
+    padding-top: @nav-height;
+    padding-bottom: @nav-height;
     margin: 0px 0px @margins;
   }
 
@@ -37,15 +38,17 @@
 
   }
    /** grids */
-  .folio{
-    .grid(3,0,9px);
-    //border: @border;
-
-  }
+//  .folio{
+//    .grid(3,0,10px);
+//    //border: @border;
+//
+//  }
 
   .grid {
-    //.grid-container;
+   .grid-container;
   }
+
+  .grids;
 
 
 
@@ -62,6 +65,9 @@
   footer {
     text-align: center;
     margin-bottom: 60px;
+    background-color: @nav-background-color;
+    min-height: 100px;
+    padding: @nav-height;
 
     > div {
       text-align: left;

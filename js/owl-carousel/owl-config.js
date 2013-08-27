@@ -10,21 +10,25 @@
 
 jQuery(document).ready(function($){
 
+
+    $('.owl-config').each(function(){
+
     var owl_selector = "#owl-slider",
         mode = 'default', //the slider mode
         config;
     //get out configuration data attr id or use the .owl-config
-    config = $('.owl-config').data('owl-data') ? $('.owl-config').data('owl-data') : '.owl-config' ;
+    //config = $(this).data('owl-data') ? $(this).data('owl-data') : '.owl-config' ;
+    config = $(this);
     //config = $().find('.owl-config').data('owl');
     if($(config).data('selector'))
         owl_selector = $(config).data('selector');
     if($(config).data('mode'))
         mode = $(config).data('mode');
 
-    var slideSpeed = 200,
-        paginationSpeed = 800,
+    var slideSpeed = $(config).data('slideSpeed') ? $(config).data('slideSpeed') : 200,
+        paginationSpeed = $(config).data('paginationSpeed') ? $(config).data('paginationSpeed') : 800,
         autoPlay = $(config).data('autoPlay') ? $(config).data('autoPlay') : true,
-        items = $(config).data('owl-items') ? $(config).data('owl-items'): 5,
+        items = $(config).data('items') ? $(config).data('items'): 5,
         itemsDesktop = $(config).data('itemsDesktop') ? $(config).data('itemsDesktop') : 4,
         itemsDesktopSmall = $(config).data('itemsDesktopSmall') ? $(config).data('itemsDesktopSmall') : 3,
         itemsTablet = $(config).data('itemssTablet') ? $(config).data('itemsTablet') : 2,
@@ -42,8 +46,9 @@ jQuery(document).ready(function($){
 
 
 
-    console.log('config' + $(config).data('owl-items'));
-    console.log('sel-' + owl_selector + ' -' + mode);
+//    console.log($(this).length  + 'shows, config' + $(config).data('owl-items'));
+//    console.log('sel-' + owl_selector + ' -' + mode);
+
 
     if(mode == 'images'){
         items = 3
@@ -54,8 +59,6 @@ jQuery(document).ready(function($){
         items = 1;
        navigation = true;
     }
-
-
     $(owl_selector).owlCarousel({
 
         //Basic Speeds
@@ -88,7 +91,7 @@ jQuery(document).ready(function($){
 
     });
 
-
+    });
 
 
 });

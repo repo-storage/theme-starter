@@ -32,7 +32,7 @@
   FIGURE {
     margin: 0px;
     padding: 0px;
-    margin-bottom: @margins + 10;
+    margin-bottom: @margins;
     padding-bottom: @padding;
   }
 
@@ -67,7 +67,9 @@
 
   }
 
-
+  FORM {
+    padding: @padding;
+  }
 
   ///* Placeholders */
   .placeholder(@black-20);
@@ -77,8 +79,9 @@
     padding: 10px;
     border: @border;
     /*+border-radius:0;*/
-    .border-radius(0);
+    .border-radius(1);
     background-color: lighten(@background-color,10%);
+    max-width: 90%;
   }
 
   INPUT[type='submit'], BUTTON {
