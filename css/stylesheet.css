@@ -564,7 +564,7 @@ MOBILE
     font-size: 4rem;
   }
   .sub-headlines,
-  .subheadlines H1 {
+  .sub-headlines H1 {
     font-size: 32px;
     font-size: 3.2rem;
   }
@@ -629,7 +629,7 @@ MOBILE
     font-size: 3.6rem;
   }
   .sub-headlines,
-  .subheadlines H1 {
+  .sub-headlines H1 {
     font-size: 28px;
     font-size: 2.8rem;
   }
@@ -694,7 +694,7 @@ MOBILE
     font-size: 3.1rem;
   }
   .sub-headlines,
-  .subheadlines H1 {
+  .sub-headlines H1 {
     font-size: 24px;
     font-size: 2.4rem;
   }
@@ -828,7 +828,7 @@ MOBILE
     font-size: 2.8rem;
   }
   .sub-headlines,
-  .subheadlines H1 {
+  .sub-headlines H1 {
     font-size: 22px;
     font-size: 2.2rem;
   }
@@ -962,7 +962,7 @@ MOBILE
     font-size: 2.3rem;
   }
   .sub-headlines,
-  .subheadlines H1 {
+  .sub-headlines H1 {
     font-size: 18px;
     font-size: 1.8rem;
   }
@@ -1131,6 +1131,12 @@ MOBILE
   list-style-type: none;
   text-align: center;
   margin: 10px;
+}
+.p-colors span {
+  display: block;
+  font-size: 2.8;
+  width: 100%;
+  border-bottom: dotted 1px #d9d9d9;
 }
 .color-samples {
   display: block;
