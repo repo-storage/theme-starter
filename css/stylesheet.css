@@ -42,7 +42,7 @@ BODY {
   background-color: #ffffff;
   line-height: 1.8;
   font-family: OpenSansRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #3f3f3f;
+  color: #181818;
   /** used to offset fixed top navs  */
 
   padding-top: 80px;
@@ -62,7 +62,7 @@ H3,
 H4,
 H5,
 H6 {
-  color: #3f3f3f;
+  color: #181818;
   line-height: 1.05;
   margin-bottom: 10px;
   padding-bottom: 10px;
@@ -77,15 +77,15 @@ A:focus {
   text-decoration: none;
 }
 A:link {
-  color: #128fda;
+  color: #02519e;
 }
 A:visited,
 A:active {
-  color: #707070;
+  color: #000000;
 }
 A:hover,
 A:focus {
-  color: #0a517c;
+  color: #011d39;
 }
 FORM {
   padding: 10px;
@@ -232,14 +232,14 @@ BUTTON {
   background-color: #e6e6e6;
   padding: 10px;
   text-transform: uppercase;
-  color: #0c0c0c;
+  color: #000000;
 }
 BUTTON:hover {
   background-color: #666666;
   background-image: none;
 }
 P {
-  color: #656565;
+  color: #3e3e3e;
   font-size: 16px;
   font-size: 1.6rem;
   margin: 0 0 20px 0;
@@ -1058,34 +1058,28 @@ MOBILE
 }
 /** colors */
 .primary-color {
-  color: #a3a3a3;
+  color: #181818;
 }
 .primary-color-2 {
-  color: #f0f0f0;
+  color: #181818;
 }
-.theme-color {
+.primary-color-3 {
+  color: #7a7a7a;
+}
+.primary-color-4 {
+  color: #cfcfcf;
+}
+.primary-color-5 {
   color: #ffffff;
-}
-.theme-color-1 {
-  color: #ffffff;
-}
-.theme-color-2 {
-  color: #ffffff;
-}
-.theme-color-3 {
-  color: #e6e6e6;
-}
-.theme-color-4 {
-  color: #cccccc;
 }
 .links {
-  color: #128fda;
+  color: #02519e;
 }
 .links-active {
-  color: #707070;
+  color: #000000;
 }
 .links-hover {
-  color: #0a517c;
+  color: #011d39;
 }
 .background-color {
   background-color: #ffffff;
@@ -1100,57 +1094,25 @@ MOBILE
   background-color: #808080;
 }
 .background-color-3 {
-  background-color: #333333;
-}
-.border-color {
-  border-color: #d9d9d9;
+  color: #333333;
 }
 .button-color {
-  color: #0c0c0c;
+  color: #000000;
 }
 .button-baackground-color {
   background-color: #e6e6e6;
 }
-.primary-color0 {
-  color: #969696;
-}
-.primary-color1 {
-  color: #8a8a8a;
-}
-.primary-color2 {
-  color: #707070;
-}
-.primary-color3 {
-  color: #565656;
-}
-.primary-color4 {
-  color: #3d3d3d;
-}
-.primary-color5 {
-  color: #232323;
-}
-.primary-color6 {
-  color: #0a0a0a;
-}
-.primary-color7 {
-  color: #000000;
-}
-.primary-color8 {
-  color: #000000;
-}
-.primary-color9 {
-  color: #000000;
-}
-#colors {
-  margin: 80px;
-}
-.color-box {
-  width: 80px;
+.color-samples > li {
+  min-width: 120px;
   height: 80px;
   font-size: 48px;
-}
-.color-box span {
   display: block;
+  float: left;
+  list-style-type: none;
+}
+.color-samples {
+  display: block;
+  width: 100%;
 }
 /*----prototyping----*/
 .section-seperator {

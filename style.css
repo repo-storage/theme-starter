@@ -1,19 +1,5 @@
-/* add customize theme */
-/*!
- * Preboot v2
- *
- * Open sourced under MIT license by @mdo.
- * Some variables and mixins from Bootstrap (Apache 2 license).
- */
-/**
-   * LESS custom theme mixins V1.0
-   *
-   */
-/*
- V-Center mixin - v-center()
- Responsive vertically align elements
- .block {
-  .v-center();
- }
+undefined_methodError: error evaluating function `darken`: Object #<Object> has no method 'toHSL' in C:\Dropbox\theme-starter-2.0\theme-starter\css\globals.less:74:23
+73 @theme-font-semibold: OpenSansSemibold;
+74 @theme-font-bold: OpenSansBold;
+75 @theme-header-font: @theme-font-semibold;
 
- */
