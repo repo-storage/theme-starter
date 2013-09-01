@@ -1,12 +1,11 @@
 //main font color -- start at the strongest hue
-//color pallet theme black
+//color pallet (theme black) @https://kuler.adobe.com/Black-color-theme-2159519/
 @cp-1: #101010;
 @cp-2: #181818;
 @cp-3: #7a7a7a;
 @cp-4: #cfcfcf;
 @cp-5: #ffffff;
 
-@font-color: @cp-2;
 
 @header: 7.2;
 @titles: 5.8;
@@ -25,6 +24,13 @@
 @links: #02519e;
 @links-active: darken(@primary-color,20%);
 @links-hover: lighten(@primary-color,20%);
+
+//
+
+@font-color: @cp-2;
+@font-color-2: contrast(@background-color,@cp-2,@cp-4);
+
+
 //units
 @section-height: 700px;
 @section-width: 100%;
@@ -122,11 +128,11 @@
 @tablet-font-h5: (@base-font + 0.9) ;
 @tablet-min-font-size: (@base-font + 0.1);
 //color variations
-@primary-color0: darken(@primary-color, 5%);
-@primary-color1: darken(@primary-color, 10%);
-@primary-color2: darken(@primary-color, 20%);
-@primary-color3: darken(@primary-color, 30%);
-@primary-color4: darken(@primary-color, 40%);
+//@primary-dark0: darken(@primary-color, 5%);
+@primary-dark1: darken(@primary-color, 10%);
+@primary-dark2: darken(@primary-color, 20%);
+@primary-dark3: darken(@primary-color, 30%);
+@primary-dark4: darken(@primary-color, 40%);
 @primary-color5: darken(@primary-color, 50%);
 @primary-color6: darken(@primary-color, 60%);
 @primary-color7: darken(@primary-color, 70%);

@@ -62,7 +62,6 @@ H3,
 H4,
 H5,
 H6 {
-  color: #181818;
   line-height: 1.05;
   margin-bottom: 10px;
   padding-bottom: 10px;
@@ -239,7 +238,6 @@ BUTTON:hover {
   background-image: none;
 }
 P {
-  color: #3e3e3e;
   font-size: 16px;
   font-size: 1.6rem;
   margin: 0 0 20px 0;
@@ -487,17 +485,36 @@ SECTION#slideshows div {
   margin-bottom: 20px;
 }
 .side-box {
-  padding: 20px;
+  background-color: #181818;
+}
+.side-box figure {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.side-box p,
+.side-box h1 {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #cfcfcf;
 }
 footer {
   text-align: center;
   margin-bottom: 60px;
   background-color: #181818;
+  color: #181818;
   min-height: 100px;
   padding: 80px;
 }
 footer > div {
   text-align: left;
+}
+footer .bio figure {
+  margin: 10px;
+  float: left;
+}
+footer p,
+footer h1 {
+  color: #7a7a7a;
 }
 /** valign 404 */
 .page-404 {
@@ -1118,7 +1135,6 @@ MOBILE
   background-color: #e6e6e6;
 }
 #colors {
-  padding-top: 80px;
   padding-bottom: 80px;
 }
 .color-samples > li {
@@ -1132,9 +1148,13 @@ MOBILE
   text-align: center;
   margin: 10px;
 }
+.p-colors {
+  margin-bottom: 40px;
+  text-align: center;
+}
 .p-colors span {
-  display: block;
-  font-size: 2.8;
+  text-align: center;
+  font-size: 1.2;
   width: 100%;
   border-bottom: dotted 1px #d9d9d9;
 }
