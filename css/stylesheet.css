@@ -585,7 +585,8 @@ MOBILE
     font-size: 32px;
     font-size: 3.2rem;
   }
-  .paragraph-text {
+  .paragraph-text,
+  .primary-text {
     font-size: 25px;
     font-size: 2.5rem;
   }
@@ -650,7 +651,8 @@ MOBILE
     font-size: 28px;
     font-size: 2.8rem;
   }
-  .paragraph-text {
+  .paragraph-text,
+  .primary-text {
     font-size: 22px;
     font-size: 2.2rem;
   }
@@ -715,7 +717,8 @@ MOBILE
     font-size: 24px;
     font-size: 2.4rem;
   }
-  .paragraph-text {
+  .paragraph-text,
+  .primary-text {
     font-size: 19px;
     font-size: 1.9rem;
   }
@@ -849,7 +852,8 @@ MOBILE
     font-size: 22px;
     font-size: 2.2rem;
   }
-  .paragraph-text {
+  .paragraph-text,
+  .primary-text {
     font-size: 17px;
     font-size: 1.7rem;
   }
@@ -983,7 +987,8 @@ MOBILE
     font-size: 18px;
     font-size: 1.8rem;
   }
-  .paragraph-text {
+  .paragraph-text,
+  .primary-text {
     font-size: 14px;
     font-size: 1.4rem;
   }
@@ -1150,10 +1155,8 @@ MOBILE
 }
 .p-colors {
   margin-bottom: 40px;
-  text-align: center;
 }
 .p-colors span {
-  text-align: center;
   font-size: 1.2;
   width: 100%;
   border-bottom: dotted 1px #d9d9d9;
