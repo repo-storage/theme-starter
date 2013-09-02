@@ -375,6 +375,10 @@ img {
 #content ARTICLE {
   margin: 0px 0px 40px;
 }
+.cover-image {
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
 SECTION#slideshows {
   background-color: #ffffff;
   background-color: #cccccc;
@@ -479,22 +483,39 @@ SECTION#slideshows div {
   overflow: hidden;
 }
 /* SIDEBAR */
-#sidebar aside {
+#sidebar {
   border-bottom: dotted 1px #d9d9d9;
   padding: 20px;
   margin-bottom: 20px;
 }
-.side-box {
-  background-color: #181818;
+.side-box aside {
+  padding: 20px;
 }
 .side-box figure {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
 }
 .side-box p,
 .side-box h1 {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0px;
+  padding-top: 0;
+  padding-bottom: 0px;
+  color: #cfcfcf;
+}
+.side-box-photos aside {
+  padding: 0;
+}
+.side-box-photos figure {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 10px;
+}
+.side-box-photos p,
+.side-box-photos h1 {
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 20px;
   color: #cfcfcf;
 }
 footer {
@@ -1154,7 +1175,7 @@ MOBILE
   margin: 10px;
 }
 .p-colors {
-  padding-bottom: 80px;
+  margin-bottom: 40px;
 }
 .p-colors span {
   font-size: 1.2;

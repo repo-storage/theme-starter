@@ -1,24 +1,30 @@
 /// patterns /////
 
-.highlight-box(@background-color:@background-color,@padding:0,@font-padding: @padding) {
+.boxes(@box-padding:20px,@font-padding: 0px, @color: @cp-4) {
 
-  background-color: @background-color;
+
+  aside{
+    padding: @box-padding;
+    //padding-top: @padding;
+  }
 
   figure {
-    padding-left: @padding;
-    padding-right: @padding;
+    padding-left: @box-padding;
+    padding-right: @box-padding;
+    //padding-bottom: @padding;
+    margin-bottom: @margins;
   }
 
   p, h1 {
-    padding-left: @font-padding;
-    padding-right: @font-padding;
-    color: contrast(@background-color,@cp-2,@cp-4);
+
+    padding: @font-padding;
+    padding-top: 0;
+    padding-bottom: @font-padding;
+    color: @color;
   }
+
 }
 
-.photo-box(@background-color:@cp-2,@padding:0px) {
-  .highlight-box(@background-color,@padding);
-}
 
 .bio(@padding:@padding, @float:left) {
 
