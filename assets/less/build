@@ -1,0 +1,15 @@
+@import "mixins.less";
+
+ 
+///* Implementation */
+
+//Button Files
+BUTTON {
+   .transitions ('background',0.5s,ease);  
+   .border-radius();
+}
+
+#offline #subscribe BUTTON {
+   .transitions (background,0.5s,ease);  
+   
+}

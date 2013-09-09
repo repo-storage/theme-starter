@@ -1,0 +1,117 @@
+//nav menus
+
+.drop-nav(){
+
+
+  @line-height: @nav-height - 30 ;
+  //margin-left: 20;
+  padding-left: 20;
+  background-color: @nav-background-color;
+
+
+
+  .brand, .navbar-brand {
+    line-height: @line-height;
+    font-family: @theme-font-semibold, @font-family-sans-serif;
+    text-transform: uppercase;
+    color: @nav-color;
+  }
+
+  .nav {
+
+    li:last-child UL{
+      right: 0;
+      left: auto;
+    }
+
+   .border-radius(0);
+
+    li{
+      height: @nav-height;
+      line-height: @nav-height;
+      &:hover {
+        //color: red;
+        background-color: @nav-hover-background-color ;
+        color: @nav-hover-color;
+      }
+
+      a{
+        line-height: @line-height;
+        color: @nav-color;
+        text-shadow: none;
+        &:hover, &:focus {
+          color: @nav-hover-color;
+          background-color: @nav-hover-background-color;
+        }
+        &:active, &:visited {
+          color: @nav-color;
+        }
+      }
+
+    }
+
+    //dropdowns
+
+      UL {
+        display: none;
+        position: absolute;
+        border: @nav-border;
+        padding-left: 0;
+      }
+
+      LI {
+        list-style: none;
+        text-align: center;
+        min-width: 100px;
+        color: @nav-color;
+        &:hover {
+          > UL {
+            display: block;
+            min-width: 150px;
+            background-color: @nav-background-color;
+            border: @nav-border;
+            border-top: none;
+            > LI {
+
+              &:hover {
+                //background-color: darken(@nav-hover-background-color, 20%);
+                color: @nav-hover-color;
+              }
+            }
+
+          }
+        }
+
+
+
+    }
+
+    //submenu
+    .sub-menu {
+
+      > LI {
+        line-height: @sub-nav-height;
+        height: @sub-nav-height;
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        border-bottom: @nav-border;
+        &:hover {
+          color: @nav-hover-color;
+        }
+        A {
+          display: block;
+
+
+
+        }
+      }
+
+      > LI:last-child {
+        border-bottom: none;
+      }
+    }
+
+  }
+
+}

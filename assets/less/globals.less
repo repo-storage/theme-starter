@@ -1,0 +1,82 @@
+// change the color to set your primary-color : (text)
+@main-color: #bebebe;
+//
+@background-color: #FFF;
+//
+@font-color : @primary-color60;
+//link color
+@links: #345aaf;
+//cover
+@cover-background-color: @theme-color-dark2;
+
+
+@primary-color5: darken(@main-color, 5%);
+@primary-color10: darken(@main-color, 10%);
+@primary-color20: darken(@main-color, 20%);
+@primary-color30: darken(@main-color, 30%);
+@primary-color40: darken(@main-color, 40%);
+@primary-color50: darken(@main-color, 50%);
+@primary-color60: darken(@main-color, 60%);
+@primary-color70: darken(@main-color, 70%);
+@primary-color80: darken(@main-color, 80%);
+@primary-color90: darken(@main-color, 90%);
+
+
+//set and create subtle set of the theme color
+@theme-color: @main-color;
+@theme-color-light1: lighten(spin(@theme-color, 5), 10%);
+@theme-color-light2: lighten(spin(@theme-color, 10), 20%);
+@theme-color-dark1: darken(spin(@theme-color, -5), 10%);
+@theme-color-dark2: darken(spin(@theme-color, -10), 20%);
+
+//
+////nav
+@nav-height: 60px;
+@nav-background-image: none;
+@nav-color: @primary-color50;
+@nav-hover-color: darken(@nav-color,20%);
+@nav-background-color: #fafafa;
+@nav-border: solid 1px darken(@nav-background-color,20%);
+@nav-hover-background-color: darken(@nav-background-color, 20%);
+@nav-hover-background-image: none;
+
+//font
+@theme-font: OpenSansRegular;
+@theme-font-semibold: '';
+@theme-header-font: OpenSansBold;
+
+//links
+@links-hover: darken(@links,20%);
+@links-lighter: lighten(@links,20%);
+@links-darker: darken(@links-hover,20%);
+
+//set font sizes
+@body-font: 62%;
+@default-font-size: 1.4;
+@p-font-size: 1.6;
+@small-font: 1.1;
+@padding: 10px;
+
+//Header font-sizes
+@header-font-size: (@p-font-size + 5.6);
+@font-h1: (@p-font-size + 4.8) ;
+@font-h2: (@p-font-size + 2.4) ;
+@font-h3: (@p-font-size + 1.2) ;
+@font-h4: (@p-font-size + 0.6) ;
+@font-h5: (@p-font-size + 0.3) ;
+
+@line-height: 1.6;
+
+//units
+@section-height: 700px;
+@section-width: 100%;
+
+//content-width
+@max-width: 1600px;
+@content-fluid: false;
+
+//borders
+@border-radius: 5px;
+
+//comments
+@comment-width: 80%;
