@@ -881,8 +881,8 @@ MOBILE
   .default-text p,
   .post p,
   article p {
-    font-size: 13px;
-    font-size: 1.3rem;
+    font-size: 14px;
+    font-size: 1.4rem;
   }
   .regular-text,
   .regular-text p,
@@ -890,8 +890,8 @@ MOBILE
   aside p,
   .post .readmore,
   .meta {
-    font-size: 11px;
-    font-size: 1.1rem;
+    font-size: 12px;
+    font-size: 1.2rem;
   }
   /* gird classes */
   .grids-2 > li,
@@ -1016,8 +1016,8 @@ MOBILE
   .default-text p,
   .post p,
   article p {
-    font-size: 11px;
-    font-size: 1.1rem;
+    font-size: 12px;
+    font-size: 1.2rem;
   }
   .regular-text,
   .regular-text p,
@@ -1025,8 +1025,8 @@ MOBILE
   aside p,
   .post .readmore,
   .meta {
-    font-size: 10px;
-    font-size: 1rem;
+    font-size: 11px;
+    font-size: 1.1rem;
   }
   /* gird classes */
   .grids-2 > li,
