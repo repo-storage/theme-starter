@@ -44,7 +44,7 @@ BODY {
   color: #181818;
   /** used to offset fixed top navs  */
 
-  padding-top: 80px;
+  padding-top: 0;
 }
 BODY > SECTION {
   padding-top: 60px;
@@ -345,6 +345,16 @@ img {
 }
 #top-nav .nav .sub-menu > LI:last-child {
   border-bottom: none;
+}
+#top-nav.navbar {
+  margin-bottom: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: none;
 }
 /*#COVER*/
 .cover {
