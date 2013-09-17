@@ -57,19 +57,6 @@ jQuery(document).ready(function($){
         $('body').addClass('mobile-phone, phone');
 
     }
-    var top_nav = $('#top-nav').data('trigger');
-
-    $(top_nav).waypoint(function(direction){
-        console.log("trigger " + top_nav +' ' + direction);
-        if(direction == 'down'){
-        $('#top-nav').transition({ opacity: 0.9});
-            $('#top-nav').addClass('navbar-fixed-top');
-        } else if(direction == 'up') {
-            $('#top-nav').transition({ opacity: 1.0});
-            $('#top-nav').removeClass('navbar-fixed-top');
-
-        }
-    }, { offset: 0});
 
 //    $('img').mouseenter(function(){
 //        $(this).transition({ opacity: 0.2 }) ;
@@ -77,5 +64,18 @@ jQuery(document).ready(function($){
 //    });
 
 
+    var top_nav = $('#top-nav').data('trigger');
+
+    $(top_nav).waypoint(function(direction){
+      console.log("trigger " + top_nav +' ' + direction);
+      if(direction == 'down'){
+        $('#top-nav').transition({ opacity: 0.4});
+        $('#top-nav').transition({ opacity: 0.85});
+        $('#top-nav').addClass('navbar-fixed-top');
+
+      } else if(direction == 'up') {
+          $('#top-nav').removeClass('navbar-fixed-top');
+      }
+    }, { offset: 0});
 
 })
