@@ -46,7 +46,7 @@ BODY {
 
 }
 BODY > SECTION {
-  padding-top: 60px;
+  padding-top: 40px;
 }
 FIGURE {
   margin: 0px;
@@ -362,10 +362,11 @@ img {
 }
 /*#COVER*/
 .cover {
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 60px;
   background-color: #f2f2f2;
   border-bottom: dotted 1px #d9d9d9;
+  text-align: center;
 }
 .cover.fold {
   min-height: 400px;
@@ -377,7 +378,11 @@ img {
 }
 /*#CONTENT*/
 #page {
-  margin-top: 80px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: #ffffff;
+  padding: 20px;
+  border: solid 1px #d9d9d9;
 }
 #content {
   padding-top: 80px;
@@ -392,8 +397,8 @@ img {
   margin: 0px 0px 40px;
 }
 .cover-image {
-  margin-bottom: 60px;
-  margin-top: 60px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 SECTION#slideshows {
   background-color: #ffffff;
@@ -540,11 +545,11 @@ SECTION#slideshows div {
 }
 footer {
   text-align: center;
-  margin-bottom: 60px;
   background-color: #181818;
   color: #181818;
   min-height: 100px;
-  padding: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 footer > div {
   text-align: left;
