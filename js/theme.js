@@ -58,13 +58,21 @@ jQuery(document).ready(function($){
 
     }
 
+//    $('img').mouseenter(function(){
+//        $(this).transition({ opacity: 0.2 }) ;
+//        console.log('im transiting fired');
+//    });
+
+
     var top_nav = $('#top-nav').data('trigger');
 
     $(top_nav).waypoint(function(direction){
       console.log("trigger " + top_nav +' ' + direction);
       if(direction == 'down'){
-//        $('#top-nav').transition({ opacity: 10});
+        $('#top-nav').transition({ opacity: 0.4});
+        $('#top-nav').transition({ opacity: 0.85});
         $('#top-nav').addClass('navbar-fixed-top');
+
       } else if(direction == 'up') {
           $('#top-nav').removeClass('navbar-fixed-top');
       }
