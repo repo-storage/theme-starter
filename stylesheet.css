@@ -542,7 +542,7 @@ SECTION#slideshows div {
 }
 footer {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 0;
   background-color: #181818;
   color: #181818;
   min-height: 100px;
