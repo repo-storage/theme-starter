@@ -415,6 +415,7 @@ SECTION#slideshows div {
 .grid {
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 .grid > li,
 .grid > div {
@@ -423,6 +424,9 @@ SECTION#slideshows div {
   box-sizing: border-box;
 }
 /* gird classes */
+.grids-2 {
+  text-align: center;
+}
 .grids-2 > li,
 .grids-2 > div {
   margin: 0;
@@ -440,6 +444,9 @@ SECTION#slideshows div {
   padding: 10px;
   overflow: hidden;
 }
+.grids-3 {
+  text-align: center;
+}
 .grids-3 > li,
 .grids-3 > div {
   margin: 0;
@@ -456,6 +463,9 @@ SECTION#slideshows div {
 .grids-3 > div .items {
   padding: 10px;
   overflow: hidden;
+}
+.grids-4 {
+  text-align: center;
 }
 .grids-4 > li,
 .grids-4 > div {
@@ -573,6 +583,9 @@ MOBILE
 **/
 /* Large desktop 1600 */
 @media (min-width: 1600px) {
+  .container {
+    max-width: 1282px;
+  }
   .mast-head,
   HEADER H1 {
     font-size: 95px;
@@ -769,6 +782,9 @@ MOBILE
     font-size: 1.2rem;
   }
   /* gird classes */
+  .grids-2 {
+    text-align: center;
+  }
   .grids-2 > li,
   .grids-2 > div {
     margin: 0;
@@ -786,6 +802,9 @@ MOBILE
     padding: 10px;
     overflow: hidden;
   }
+  .grids-3 {
+    text-align: center;
+  }
   .grids-3 > li,
   .grids-3 > div {
     margin: 0;
@@ -802,6 +821,9 @@ MOBILE
   .grids-3 > div .items {
     padding: 10px;
     overflow: hidden;
+  }
+  .grids-4 {
+    text-align: center;
   }
   .grids-4 > li,
   .grids-4 > div {
@@ -904,6 +926,9 @@ MOBILE
     font-size: 1.2rem;
   }
   /* gird classes */
+  .grids-2 {
+    text-align: center;
+  }
   .grids-2 > li,
   .grids-2 > div {
     margin: 0;
@@ -921,6 +946,9 @@ MOBILE
     padding: 10px;
     overflow: hidden;
   }
+  .grids-3 {
+    text-align: center;
+  }
   .grids-3 > li,
   .grids-3 > div {
     margin: 0;
@@ -937,6 +965,9 @@ MOBILE
   .grids-3 > div .items {
     padding: 10px;
     overflow: hidden;
+  }
+  .grids-4 {
+    text-align: center;
   }
   .grids-4 > li,
   .grids-4 > div {
@@ -1039,6 +1070,9 @@ MOBILE
     font-size: 1.1rem;
   }
   /* gird classes */
+  .grids-2 {
+    text-align: center;
+  }
   .grids-2 > li,
   .grids-2 > div {
     margin: 0;
@@ -1056,6 +1090,9 @@ MOBILE
     padding: 10px;
     overflow: hidden;
   }
+  .grids-3 {
+    text-align: center;
+  }
   .grids-3 > li,
   .grids-3 > div {
     margin: 0;
@@ -1072,6 +1109,9 @@ MOBILE
   .grids-3 > div .items {
     padding: 10px;
     overflow: hidden;
+  }
+  .grids-4 {
+    text-align: center;
   }
   .grids-4 > li,
   .grids-4 > div {
