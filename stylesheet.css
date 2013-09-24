@@ -365,7 +365,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f2f2f2;
-  border-bottom: dotted 1px #d9d9d9;
 }
 .cover.fold {
   min-height: 400px;
@@ -514,7 +513,7 @@ SECTION#slideshows div {
   padding: 0px;
   padding-top: 0;
   padding-bottom: 0px;
-  color: #cfcfcf;
+  color: #f4b903;
 }
 .side-box-photos aside {
   padding: 0;
@@ -529,13 +528,13 @@ SECTION#slideshows div {
   padding: 20px;
   padding-top: 0;
   padding-bottom: 20px;
-  color: #cfcfcf;
+  color: #f4b903;
 }
 footer {
   text-align: center;
-  margin-bottom: 60px;
-  background-color: #181818;
-  color: #181818;
+  margin-bottom: 0;
+  background-color: #76b130;
+  color: #FFF;
   min-height: 100px;
   padding: 80px;
 }
@@ -548,7 +547,7 @@ footer .bio figure {
 }
 footer p,
 footer h1 {
-  color: #7a7a7a;
+  color: #FFF;
 }
 /** valign 404 */
 .page-404 {
@@ -1116,32 +1115,35 @@ MOBILE
 .primary-color {
   color: #181818;
 }
+.primary-color-1 {
+  color: #007eba;
+}
 .primary-color-2 {
-  color: #181818;
+  color: #76b130;
 }
 .primary-color-3 {
-  color: #7a7a7a;
+  color: #f1e303;
 }
 .primary-color-4 {
-  color: #cfcfcf;
+  color: #f4b903;
 }
 .primary-color-5 {
-  color: #ffffff;
+  color: #f37c07;
 }
 .bg-1 {
-  background-color: #101010;
+  background-color: #007eba;
 }
 .bg-2 {
-  background-color: #181818;
+  background-color: #76b130;
 }
 .bg-3 {
-  background-color: #7a7a7a;
+  background-color: #f1e303;
 }
 .bg-4 {
-  background-color: #cfcfcf;
+  background-color: #f4b903;
 }
 .bg-5 {
-  background-color: #ffffff;
+  background-color: #f37c07;
 }
 .links {
   color: #02519e;
