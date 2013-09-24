@@ -484,6 +484,9 @@ SECTION#slideshows div {
   padding: 10px;
   overflow: hidden;
 }
+.grids-12 {
+  text-align: center;
+}
 .grids-12 > li,
 .grids-12 > div {
   margin: 0;
@@ -591,12 +594,12 @@ MOBILE
     font-size: 95px;
     font-size: 9.5rem;
   }
-  SECTION H1,
-  .post H1 {
+  SECTION H1 {
     font-size: 65px;
     font-size: 6.5rem;
   }
-  ARTICLE H1 {
+  ARTICLE H1,
+  .post H1 {
     font-size: 40px;
     font-size: 4rem;
   }
@@ -657,12 +660,12 @@ MOBILE
     font-size: 72px;
     font-size: 7.2rem;
   }
-  SECTION H1,
-  .post H1 {
+  SECTION H1 {
     font-size: 58px;
     font-size: 5.8rem;
   }
-  ARTICLE H1 {
+  ARTICLE H1,
+  .post H1 {
     font-size: 36px;
     font-size: 3.6rem;
   }
@@ -723,12 +726,12 @@ MOBILE
     font-size: 65px;
     font-size: 6.5rem;
   }
-  SECTION H1,
-  .post H1 {
+  SECTION H1 {
     font-size: 50px;
     font-size: 5rem;
   }
-  ARTICLE H1 {
+  ARTICLE H1,
+  .post H1 {
     font-size: 31px;
     font-size: 3.1rem;
   }
@@ -842,6 +845,9 @@ MOBILE
     padding: 10px;
     overflow: hidden;
   }
+  .grids-12 {
+    text-align: center;
+  }
   .grids-12 > li,
   .grids-12 > div {
     margin: 0;
@@ -867,12 +873,12 @@ MOBILE
     font-size: 56px;
     font-size: 5.6rem;
   }
-  SECTION H1,
-  .post H1 {
+  SECTION H1 {
     font-size: 45px;
     font-size: 4.5rem;
   }
-  ARTICLE H1 {
+  ARTICLE H1,
+  .post H1 {
     font-size: 28px;
     font-size: 2.8rem;
   }
@@ -986,6 +992,9 @@ MOBILE
     padding: 10px;
     overflow: hidden;
   }
+  .grids-12 {
+    text-align: center;
+  }
   .grids-12 > li,
   .grids-12 > div {
     margin: 0;
@@ -1011,12 +1020,12 @@ MOBILE
     font-size: 45px;
     font-size: 4.5rem;
   }
-  SECTION H1,
-  .post H1 {
+  SECTION H1 {
     font-size: 37px;
     font-size: 3.7rem;
   }
-  ARTICLE H1 {
+  ARTICLE H1,
+  .post H1 {
     font-size: 23px;
     font-size: 2.3rem;
   }
@@ -1129,6 +1138,9 @@ MOBILE
   .grids-4 > div .items {
     padding: 10px;
     overflow: hidden;
+  }
+  .grids-12 {
+    text-align: center;
   }
   .grids-12 > li,
   .grids-12 > div {
