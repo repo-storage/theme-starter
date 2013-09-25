@@ -361,7 +361,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f2f2f2;
-  border-bottom: dotted 1px #d9d9d9;
+  border-bottom: none;
 }
 .cover.fold {
   min-height: 400px;
@@ -369,7 +369,7 @@ img {
 #features {
   padding-top: 60px;
   padding-bottom: 60px;
-  border-bottom: dotted 1px #d9d9d9;
+  border-bottom: none;
 }
 /*#CONTENT*/
 #page {
@@ -377,6 +377,7 @@ img {
   margin-bottom: 80px;
   background-color: #fafafa;
   padding: 0;
+  border: solid 1px #d9d9d9;
 }
 #page .container {
   padding-left: 20px;
