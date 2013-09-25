@@ -69,12 +69,14 @@ jQuery(document).ready(function($){
     $(top_nav).waypoint(function(direction){
       console.log("trigger " + top_nav +' ' + direction);
       if(direction == 'down'){
-        $('#top-nav').transition({ opacity: 0.4});
-        $('#top-nav').transition({ opacity: 0.85});
+        $('#top-nav').transition({ opacity: 0.5});
+        $('#top-nav').transition({ opacity: 0.9});
         $('#top-nav').addClass('navbar-fixed-top');
 
       } else if(direction == 'up') {
           $('#top-nav').removeClass('navbar-fixed-top');
+          $('#top-nav').transition({ opacity: 0.5});
+          $('#top-nav').transition({ opacity: 0.9});
       }
 
 
