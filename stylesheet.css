@@ -374,6 +374,13 @@ img {
 /*#CONTENT*/
 #page {
   margin-top: 80px;
+  margin-bottom: 80px;
+  background-color: #fafafa;
+  padding: 0;
+}
+#page .container {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #content {
   padding-top: 80px;
