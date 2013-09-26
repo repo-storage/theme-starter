@@ -46,7 +46,7 @@ BODY {
 
 }
 BODY > SECTION {
-  padding-top: 60px;
+  padding-top: 40px;
 }
 FIGURE {
   margin: 0px;
@@ -388,8 +388,8 @@ img {
   margin: 0px 0px 40px;
 }
 .cover-image {
-  margin-bottom: 60px;
-  margin-top: 60px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 SECTION#slideshows {
   background-color: #ffffff;
@@ -437,6 +437,7 @@ SECTION#slideshows div {
   padding: 0;
   float: left;
   list-style: none;
+  text-align: center;
 }
 .grids-2 > li .items,
 .grids-2 > div .items {
@@ -454,6 +455,7 @@ SECTION#slideshows div {
   padding: 0;
   float: left;
   list-style: none;
+  text-align: center;
 }
 .grids-3 > li .items,
 .grids-3 > div .items {
@@ -471,6 +473,7 @@ SECTION#slideshows div {
   padding: 0;
   float: left;
   list-style: none;
+  text-align: center;
 }
 .grids-4 > li .items,
 .grids-4 > div .items {
@@ -488,6 +491,7 @@ SECTION#slideshows div {
   padding: 0;
   float: left;
   list-style: none;
+  text-align: center;
 }
 .grids-12 > li .items,
 .grids-12 > div .items {
@@ -576,6 +580,9 @@ MOBILE
 **/
 /* Large desktop 1600 */
 @media (min-width: 1600px) {
+  .container {
+    max-width: 1282px;
+  }
   .mast-head,
   HEADER H1 {
     font-size: 95px;
@@ -783,6 +790,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-2 > li .items,
   .grids-2 > div .items {
@@ -800,6 +808,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-3 > li .items,
   .grids-3 > div .items {
@@ -817,6 +826,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-4 > li .items,
   .grids-4 > div .items {
@@ -834,6 +844,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-12 > li .items,
   .grids-12 > div .items {
@@ -918,6 +929,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-2 > li .items,
   .grids-2 > div .items {
@@ -935,6 +947,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-3 > li .items,
   .grids-3 > div .items {
@@ -952,6 +965,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-4 > li .items,
   .grids-4 > div .items {
@@ -969,6 +983,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-12 > li .items,
   .grids-12 > div .items {
@@ -1053,6 +1068,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-2 > li .items,
   .grids-2 > div .items {
@@ -1070,6 +1086,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-3 > li .items,
   .grids-3 > div .items {
@@ -1087,6 +1104,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-4 > li .items,
   .grids-4 > div .items {
@@ -1104,6 +1122,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-12 > li .items,
   .grids-12 > div .items {
