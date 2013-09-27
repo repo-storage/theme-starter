@@ -61,13 +61,16 @@ jQuery(document).ready(function($){
     var top_nav = $('#top-nav').data('trigger');
 
     $(top_nav).waypoint(function(direction){
-      console.log("trigger " + top_nav +' ' + direction);
-      if(direction == 'down'){
-//        $('#top-nav').transition({ opacity: 10});
-        $('#top-nav').addClass('navbar-fixed-top');
-      } else if(direction == 'up') {
-          $('#top-nav').removeClass('navbar-fixed-top');
-      }
+        console.log("trigger " + top_nav +' ' + direction);
+        if(direction == 'down'){
+            $('#top-nav').transition({ opacity: 0.5});
+            $('#top-nav').transition({ opacity: 0.95});
+            $('#top-nav').addClass('navbar-fixed-top');
+        } else if(direction == 'up') {
+            $('#top-nav').removeClass('navbar-fixed-top');
+            $('#top-nav').transition({ opacity: 0.5});
+            $('#top-nav').transition({ opacity: 0.95});
+        }
 
 
 
