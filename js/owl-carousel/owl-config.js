@@ -58,7 +58,6 @@ jQuery(document).ready(function($){
 
     if(mode === 'slideshow'){
         items = 1;
-       navigation = true;
        itemsDesktop = 1;
        itemsDesktopSmall = 1;
        itemsTablet = 1;
