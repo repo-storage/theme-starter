@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
         items = $(config).data('items') ? $(config).data('items'): 5,
         itemsDesktop = $(config).data('itemsDesktop') ? $(config).data('itemsDesktop') : 4,
         itemsDesktopSmall = $(config).data('itemsDesktopSmall') ? $(config).data('itemsDesktopSmall') : 3,
-        itemsTablet = $(config).data('itemssTablet') ? $(config).data('itemsTablet') : 2,
+        itemsTablet = $(config).data('itemsTablet') ? $(config).data('itemsTablet') : 2,
         itemsMobile = $(config).data('itemsMobile') ? $(config).data('itemsMobile') : 1,
         theme = $(config).data('theme') ? $(config).data('theme') : "owl-theme",
         goFirst = $(config).data('goFirat') ? $(config).data('goFirst') : true ,
@@ -51,13 +51,18 @@ jQuery(document).ready(function($){
 
 
     if(mode == 'images'){
-        items = 3
+        items = 3;
+
     }
 
 
     if(mode === 'slideshow'){
         items = 1;
        navigation = true;
+       itemsDesktop = 1;
+       itemsDesktopSmall = 1;
+       itemsTablet = 1;
+       itemsMobile =1;
     }
     $(owl_selector).owlCarousel({
 

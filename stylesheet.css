@@ -265,20 +265,11 @@ img {
 
   padding-left: 20;
   background-color: #181818;
-}
-#top-nav.navbar {
   margin-bottom: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: none;
 }
 #top-nav .brand,
 #top-nav .navbar-brand {
-  line-height: 50px;
+  line-height: 60px;
   font-family: OpenSansSemibold, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #e1e1e1;
@@ -304,7 +295,7 @@ img {
   color: #989898;
 }
 #top-nav .nav li a {
-  line-height: 50px;
+  line-height: 60px;
   color: #e1e1e1;
   text-shadow: none;
 }
