@@ -94,7 +94,7 @@ jQuery(document).ready(function($){
 
     var top_nav = $('#top-nav').data('trigger');
 
-    $(top_nav).waypoint(function(direction){
+    $('#top-nav .nav').waypoint(function(direction){
       console.log("trigger " + top_nav +' ' + direction);
       if(direction == 'down'){
         $('#top-nav').transition({ opacity: 0.5});
@@ -102,6 +102,7 @@ jQuery(document).ready(function($){
         $('#top-nav').addClass('navbar-fixed-top');
 
       } else if(direction == 'up') {
+
           $('#top-nav').removeClass('navbar-fixed-top');
           $('#top-nav').transition({ opacity: 0.5});
           $('#top-nav').transition({ opacity: 0.9});
