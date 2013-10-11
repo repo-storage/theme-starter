@@ -258,6 +258,9 @@ img {
 #content .container {
   min-height: 400px;
 }
+.top-nav-padding {
+  padding-top: 80px;
+}
 #top-nav {
   /**
  * Nav menu for bootstrap 3.0 navs
@@ -265,11 +268,10 @@ img {
 
   padding-left: 20;
   background-color: #181818;
-  margin-bottom: 0;
 }
 #top-nav .brand,
 #top-nav .navbar-brand {
-  line-height: 60px;
+  line-height: 50px;
   font-family: OpenSansSemibold, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #e1e1e1;
@@ -295,7 +297,7 @@ img {
   color: #989898;
 }
 #top-nav .nav li a {
-  line-height: 60px;
+  line-height: 50px;
   color: #e1e1e1;
   text-shadow: none;
 }
@@ -352,7 +354,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f2f2f2;
-  border-bottom: none;
 }
 .cover.fold {
   min-height: 400px;
@@ -360,19 +361,12 @@ img {
 #features {
   padding-top: 60px;
   padding-bottom: 60px;
-  border-bottom: none;
+  border-bottom: dotted 1px #d9d9d9;
 }
 /*#CONTENT*/
 #page {
   margin-top: 80px;
   margin-bottom: 80px;
-  background-color: #fafafa;
-  padding: 0;
-  border: solid 1px #d9d9d9;
-}
-#page .container {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 #content {
   padding-top: 80px;
@@ -508,7 +502,6 @@ SECTION#slideshows div {
 }
 /* SIDEBAR */
 #sidebar {
-  border-bottom: dotted 1px #d9d9d9;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -546,7 +539,7 @@ footer {
   text-align: center;
   margin-bottom: 0;
   background-color: #181818;
-  color: #181818;
+  color: #FFF;
   min-height: 100px;
   padding: 80px;
 }
@@ -559,7 +552,7 @@ footer .bio figure {
 }
 footer p,
 footer h1 {
-  color: #7a7a7a;
+  color: #FFF;
 }
 /** valign 404 */
 .page-404 {
@@ -1165,6 +1158,9 @@ MOBILE
 /** colors */
 .primary-color {
   color: #181818;
+}
+.primary-color-1 {
+  color: #101010;
 }
 .primary-color-2 {
   color: #181818;
