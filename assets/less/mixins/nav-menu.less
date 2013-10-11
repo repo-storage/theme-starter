@@ -3,12 +3,10 @@
 .drop-nav(){
 
 
-  @line-height: @nav-height;
-
+  @line-height: @nav-height - 30 ;
   //margin-left: 20;
   padding-left: 20;
   background-color: @nav-background-color;
-  margin-bottom: 0;
 
 
 
@@ -26,7 +24,7 @@
       left: auto;
     }
 
-.border-radius(0);
+   .border-radius(0);
 
     li{
       height: @nav-height;
@@ -54,35 +52,35 @@
 
     //dropdowns
 
-    UL {
-      display: none;
-      position: absolute;
-      border: @nav-border;
-      padding-left: 0;
-    }
-
-    LI {
-      list-style: none;
-      text-align: center;
-      min-width: 100px;
-      color: @nav-color;
-      &:hover {
-        > UL {
-          display: block;
-          min-width: 150px;
-          background-color: @nav-background-color;
-          border: @nav-border;
-          border-top: none;
-          > LI {
-
-            &:hover {
-              //background-color: darken(@nav-hover-background-color, 20%);
-              color: @nav-hover-color;
-            }
-          }
-
-        }
+      UL {
+        display: none;
+        position: absolute;
+        border: @nav-border;
+        padding-left: 0;
       }
+
+      LI {
+        list-style: none;
+        text-align: center;
+        min-width: 100px;
+        color: @nav-color;
+        &:hover {
+          > UL {
+            display: block;
+            min-width: 150px;
+            background-color: @nav-background-color;
+            border: @nav-border;
+            border-top: none;
+            > LI {
+
+              &:hover {
+                //background-color: darken(@nav-hover-background-color, 20%);
+                color: @nav-hover-color;
+              }
+            }
+
+          }
+        }
 
 
 
