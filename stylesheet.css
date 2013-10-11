@@ -47,7 +47,7 @@ BODY {
   padding-top: 0;
 }
 BODY > SECTION {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 FIGURE {
   margin: 0px;
@@ -287,8 +287,8 @@ img {
   left: auto;
 }
 #top-nav .nav li {
-  height: 60px;
-  line-height: 60px;
+  height: 80px;
+  line-height: 80px;
 }
 #top-nav .nav li:hover {
   background-color: #323232;
@@ -358,14 +358,14 @@ img {
   min-height: 400px;
 }
 #features {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   border-bottom: none;
 }
 /*#CONTENT*/
 #page {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   background-color: #fafafa;
   padding: 0;
   border: solid 1px #d9d9d9;
@@ -375,8 +375,8 @@ img {
   padding-right: 20px;
 }
 #content {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   margin: 0px 0px 10px;
 }
 #content P {
@@ -387,8 +387,8 @@ img {
   margin: 0px 0px 40px;
 }
 .cover-image {
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 SECTION#slideshows {
   background-color: #ffffff;
@@ -548,7 +548,7 @@ footer {
   background-color: #181818;
   color: #181818;
   min-height: 100px;
-  padding: 60px;
+  padding: 80px;
 }
 footer > div {
   text-align: left;
@@ -1224,7 +1224,7 @@ MOBILE
   background-color: #e6e6e6;
 }
 #colors {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 .color-samples > li {
   border: dotted 1px #d9d9d9;
@@ -1257,5 +1257,5 @@ MOBILE
   text-align: center;
   margin: 20px 20px 80px;
   text-transform: uppercase;
-  min-height: 60px;
+  min-height: 80px;
 }

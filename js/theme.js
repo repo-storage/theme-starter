@@ -2,9 +2,37 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+jQuery.fn.topLink = function(settings) {
+	settings = jQuery.extend({
+		min: 1,
+		fadeSpeed: 200
+	}, settings);
+	return this.each(function() {
+		//listen for scroll
+		var el = jQuery(this);
+		el.hide(); //in case the user forgot
+		jQuery(window).scroll(function() {
+			if(jQuery(window).scrollTop() >= settings.min)
+			{
+				el.fadeIn(settings.fadeSpeed);
+			}
+			else
+			{
+				el.fadeOut(settings.fadeSpeed);
+			}
+		});
+	});
+};
+
 
 //Theme scripts
 jQuery(document).ready(function($){
+
+    $('#top-link').topLink({
+		min: 400,
+		fadeSpeed: 500
+	});
+
     $('a[href^="#"]').bind('click.smoothscroll',function (e) {
         e.preventDefault();
 
@@ -58,28 +86,19 @@ jQuery(document).ready(function($){
 
     }
 
-//    $('img').mouseenter(function(){
-//        $(this).transition({ opacity: 0.2 }) ;
-//        console.log('im transiting fired');
-//    });
-
-
     var top_nav = $('#top-nav').data('trigger');
 
-    $('#top-nav .nav').waypoint(function(direction){
-      console.log("trigger " + top_nav +' ' + direction);
-      if(direction == 'down'){
-        $('#top-nav').transition({ opacity: 0.5});
-        $('#top-nav').transition({ opacity: 0.9});
-        $('#top-nav').addClass('navbar-fixed-top');
-
-      } else if(direction == 'up') {
-
-          $('#top-nav').removeClass('navbar-fixed-top');
-          $('#top-nav').transition({ opacity: 0.5});
-          $('#top-nav').transition({ opacity: 0.9});
-      }
-
+    $('#nav-separator').waypoint(function(direction){
+        console.log("trigger " + top_nav +' ' + direction);
+        if(direction == 'down'){
+            $('#top-nav').transition({ opacity: 0.5});
+            $('#top-nav').transition({ opacity: 0.95});
+            $('#top-nav').addClass('navbar-fixed-top');
+        } else if(direction == 'up') {
+            $('#top-nav').removeClass('navbar-fixed-top');
+            $('#top-nav').transition({ opacity: 0.5});
+            $('#top-nav').transition({ opacity: 0.95});
+        }
 
 
     }, { offset: 0});
