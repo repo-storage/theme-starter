@@ -263,20 +263,8 @@ img {
  * Nav menu for bootstrap 3.0 navs
  */
 
-  padding-top: 20px;
-  padding-bottom: 20px;
   padding-left: 20;
   background-color: #181818;
-}
-#top-nav.navbar {
-  margin-bottom: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: none;
 }
 #top-nav .brand,
 #top-nav .navbar-brand {
