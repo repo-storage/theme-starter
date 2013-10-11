@@ -2,9 +2,37 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+jQuery.fn.topLink = function(settings) {
+	settings = jQuery.extend({
+		min: 1,
+		fadeSpeed: 200
+	}, settings);
+	return this.each(function() {
+		//listen for scroll
+		var el = jQuery(this);
+		el.hide(); //in case the user forgot
+		jQuery(window).scroll(function() {
+			if(jQuery(window).scrollTop() >= settings.min)
+			{
+				el.fadeIn(settings.fadeSpeed);
+			}
+			else
+			{
+				el.fadeOut(settings.fadeSpeed);
+			}
+		});
+	});
+};
+
 
 //Theme scripts
 jQuery(document).ready(function($){
+
+    $('#top-link').topLink({
+		min: 400,
+		fadeSpeed: 500
+	});
+
     $('a[href^="#"]').bind('click.smoothscroll',function (e) {
         e.preventDefault();
 
