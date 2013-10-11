@@ -28,7 +28,7 @@
 /** --------------------------------------- */
 HTML,
 BODY {
-  height: 80%;
+  height: 100%;
 }
 HTML {
   font-size: 62%;
@@ -44,7 +44,6 @@ BODY {
   color: #181818;
   /** used to offset fixed top navs  */
 
-  padding-top: 0;
 }
 BODY > SECTION {
   padding-top: 40px;
@@ -263,27 +262,20 @@ img {
  * Nav menu for bootstrap 3.0 navs
  */
 
-  padding-top: 20px;
-  padding-bottom: 20px;
   padding-left: 20;
   background-color: #181818;
-}
-#top-nav.navbar {
-  margin-bottom: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: none;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  transition: all 1s linear;
 }
 #top-nav .brand,
 #top-nav .navbar-brand {
-  line-height: 30px;
+  line-height: 50px;
   font-family: OpenSansSemibold, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  color: #e1e1e1;
+  color: #f1e303;
 }
 #top-nav .nav {
   -webkit-border-radius: 0;
@@ -298,26 +290,26 @@ img {
   left: auto;
 }
 #top-nav .nav li {
-  height: 60px;
-  line-height: 60px;
+  height: 80px;
+  line-height: 80px;
 }
 #top-nav .nav li:hover {
   background-color: #323232;
-  color: #989898;
+  color: #ffffff;
 }
 #top-nav .nav li a {
-  line-height: 30px;
-  color: #e1e1e1;
+  line-height: 50px;
+  color: #f1e303;
   text-shadow: none;
 }
 #top-nav .nav li a:hover,
 #top-nav .nav li a:focus {
-  color: #989898;
+  color: #ffffff;
   background-color: #323232;
 }
 #top-nav .nav li a:active,
 #top-nav .nav li a:visited {
-  color: #e1e1e1;
+  color: #f1e303;
 }
 #top-nav .nav UL {
   display: none;
@@ -329,7 +321,7 @@ img {
   list-style: none;
   text-align: center;
   min-width: 100px;
-  color: #e1e1e1;
+  color: #f1e303;
 }
 #top-nav .nav LI:hover > UL {
   display: block;
@@ -339,7 +331,7 @@ img {
   border-top: none;
 }
 #top-nav .nav LI:hover > UL > LI:hover {
-  color: #989898;
+  color: #ffffff;
 }
 #top-nav .nav .sub-menu > LI {
   line-height: 60px;
@@ -350,7 +342,7 @@ img {
   border-bottom: solid 1px #0b0b0b;
 }
 #top-nav .nav .sub-menu > LI:hover {
-  color: #989898;
+  color: #ffffff;
 }
 #top-nav .nav .sub-menu > LI A {
   display: block;
@@ -358,36 +350,38 @@ img {
 #top-nav .nav .sub-menu > LI:last-child {
   border-bottom: none;
 }
+#top-nav.navbar {
+  margin-bottom: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: none;
+}
 /*#COVER*/
 .cover {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f2f2f2;
-  border-bottom: none;
 }
 .cover.fold {
   min-height: 400px;
 }
 #features {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-bottom: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: dotted 1px #d9d9d9;
 }
 /*#CONTENT*/
 #page {
   margin-top: 60px;
   margin-bottom: 60px;
-  background-color: #fafafa;
-  padding: 0;
-  border: solid 1px #d9d9d9;
-}
-#page .container {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 #content {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   margin: 0px 0px 10px;
 }
 #content P {
@@ -428,7 +422,6 @@ SECTION#slideshows div {
 .grid {
   padding: 0;
   margin: 0;
-  text-align: center;
 }
 .grid > li,
 .grid > div {
@@ -437,9 +430,6 @@ SECTION#slideshows div {
   box-sizing: border-box;
 }
 /* gird classes */
-.grids-2 {
-  text-align: center;
-}
 .grids-2 > li,
 .grids-2 > div {
   margin: 0;
@@ -451,14 +441,12 @@ SECTION#slideshows div {
   padding: 0;
   float: left;
   list-style: none;
+  text-align: center;
 }
 .grids-2 > li .items,
 .grids-2 > div .items {
   padding: 10px;
   overflow: hidden;
-}
-.grids-3 {
-  text-align: center;
 }
 .grids-3 > li,
 .grids-3 > div {
@@ -471,14 +459,12 @@ SECTION#slideshows div {
   padding: 0;
   float: left;
   list-style: none;
+  text-align: center;
 }
 .grids-3 > li .items,
 .grids-3 > div .items {
   padding: 10px;
   overflow: hidden;
-}
-.grids-4 {
-  text-align: center;
 }
 .grids-4 > li,
 .grids-4 > div {
@@ -491,14 +477,12 @@ SECTION#slideshows div {
   padding: 0;
   float: left;
   list-style: none;
+  text-align: center;
 }
 .grids-4 > li .items,
 .grids-4 > div .items {
   padding: 10px;
   overflow: hidden;
-}
-.grids-12 {
-  text-align: center;
 }
 .grids-12 > li,
 .grids-12 > div {
@@ -511,6 +495,7 @@ SECTION#slideshows div {
   padding: 0;
   float: left;
   list-style: none;
+  text-align: center;
 }
 .grids-12 > li .items,
 .grids-12 > div .items {
@@ -519,7 +504,6 @@ SECTION#slideshows div {
 }
 /* SIDEBAR */
 #sidebar {
-  border-bottom: dotted 1px #d9d9d9;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -536,7 +520,7 @@ SECTION#slideshows div {
   padding: 0px;
   padding-top: 0;
   padding-bottom: 0px;
-  color: #cfcfcf;
+  color: #f4b903;
 }
 .side-box-photos aside {
   padding: 0;
@@ -551,15 +535,15 @@ SECTION#slideshows div {
   padding: 20px;
   padding-top: 0;
   padding-bottom: 20px;
-  color: #cfcfcf;
+  color: #f4b903;
 }
 footer {
   text-align: center;
   margin-bottom: 0;
-  background-color: #181818;
-  color: #181818;
+  background-color: #76b130;
+  color: #FFF;
   min-height: 100px;
-  padding: 60px;
+  padding: 80px;
 }
 footer > div {
   text-align: left;
@@ -570,7 +554,7 @@ footer .bio figure {
 }
 footer p,
 footer h1 {
-  color: #7a7a7a;
+  color: #FFF;
 }
 /** valign 404 */
 .page-404 {
@@ -607,12 +591,12 @@ MOBILE
     font-size: 95px;
     font-size: 9.5rem;
   }
-  SECTION H1 {
+  SECTION H1,
+  .post H1 {
     font-size: 65px;
     font-size: 6.5rem;
   }
-  ARTICLE H1,
-  .post H1 {
+  ARTICLE H1 {
     font-size: 40px;
     font-size: 4rem;
   }
@@ -673,12 +657,12 @@ MOBILE
     font-size: 72px;
     font-size: 7.2rem;
   }
-  SECTION H1 {
+  SECTION H1,
+  .post H1 {
     font-size: 58px;
     font-size: 5.8rem;
   }
-  ARTICLE H1,
-  .post H1 {
+  ARTICLE H1 {
     font-size: 36px;
     font-size: 3.6rem;
   }
@@ -739,12 +723,12 @@ MOBILE
     font-size: 65px;
     font-size: 6.5rem;
   }
-  SECTION H1 {
+  SECTION H1,
+  .post H1 {
     font-size: 50px;
     font-size: 5rem;
   }
-  ARTICLE H1,
-  .post H1 {
+  ARTICLE H1 {
     font-size: 31px;
     font-size: 3.1rem;
   }
@@ -798,9 +782,6 @@ MOBILE
     font-size: 1.2rem;
   }
   /* gird classes */
-  .grids-2 {
-    text-align: center;
-  }
   .grids-2 > li,
   .grids-2 > div {
     margin: 0;
@@ -812,14 +793,12 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-2 > li .items,
   .grids-2 > div .items {
     padding: 10px;
     overflow: hidden;
-  }
-  .grids-3 {
-    text-align: center;
   }
   .grids-3 > li,
   .grids-3 > div {
@@ -832,14 +811,12 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-3 > li .items,
   .grids-3 > div .items {
     padding: 10px;
     overflow: hidden;
-  }
-  .grids-4 {
-    text-align: center;
   }
   .grids-4 > li,
   .grids-4 > div {
@@ -852,14 +829,12 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-4 > li .items,
   .grids-4 > div .items {
     padding: 10px;
     overflow: hidden;
-  }
-  .grids-12 {
-    text-align: center;
   }
   .grids-12 > li,
   .grids-12 > div {
@@ -872,6 +847,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-12 > li .items,
   .grids-12 > div .items {
@@ -886,12 +862,12 @@ MOBILE
     font-size: 56px;
     font-size: 5.6rem;
   }
-  SECTION H1 {
+  SECTION H1,
+  .post H1 {
     font-size: 45px;
     font-size: 4.5rem;
   }
-  ARTICLE H1,
-  .post H1 {
+  ARTICLE H1 {
     font-size: 28px;
     font-size: 2.8rem;
   }
@@ -945,9 +921,6 @@ MOBILE
     font-size: 1.2rem;
   }
   /* gird classes */
-  .grids-2 {
-    text-align: center;
-  }
   .grids-2 > li,
   .grids-2 > div {
     margin: 0;
@@ -959,14 +932,12 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-2 > li .items,
   .grids-2 > div .items {
     padding: 10px;
     overflow: hidden;
-  }
-  .grids-3 {
-    text-align: center;
   }
   .grids-3 > li,
   .grids-3 > div {
@@ -979,14 +950,12 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-3 > li .items,
   .grids-3 > div .items {
     padding: 10px;
     overflow: hidden;
-  }
-  .grids-4 {
-    text-align: center;
   }
   .grids-4 > li,
   .grids-4 > div {
@@ -999,14 +968,12 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-4 > li .items,
   .grids-4 > div .items {
     padding: 10px;
     overflow: hidden;
-  }
-  .grids-12 {
-    text-align: center;
   }
   .grids-12 > li,
   .grids-12 > div {
@@ -1019,6 +986,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-12 > li .items,
   .grids-12 > div .items {
@@ -1033,12 +1001,12 @@ MOBILE
     font-size: 45px;
     font-size: 4.5rem;
   }
-  SECTION H1 {
+  SECTION H1,
+  .post H1 {
     font-size: 37px;
     font-size: 3.7rem;
   }
-  ARTICLE H1,
-  .post H1 {
+  ARTICLE H1 {
     font-size: 23px;
     font-size: 2.3rem;
   }
@@ -1092,9 +1060,6 @@ MOBILE
     font-size: 1.1rem;
   }
   /* gird classes */
-  .grids-2 {
-    text-align: center;
-  }
   .grids-2 > li,
   .grids-2 > div {
     margin: 0;
@@ -1106,14 +1071,12 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-2 > li .items,
   .grids-2 > div .items {
     padding: 10px;
     overflow: hidden;
-  }
-  .grids-3 {
-    text-align: center;
   }
   .grids-3 > li,
   .grids-3 > div {
@@ -1126,14 +1089,12 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-3 > li .items,
   .grids-3 > div .items {
     padding: 10px;
     overflow: hidden;
-  }
-  .grids-4 {
-    text-align: center;
   }
   .grids-4 > li,
   .grids-4 > div {
@@ -1146,14 +1107,12 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-4 > li .items,
   .grids-4 > div .items {
     padding: 10px;
     overflow: hidden;
-  }
-  .grids-12 {
-    text-align: center;
   }
   .grids-12 > li,
   .grids-12 > div {
@@ -1166,6 +1125,7 @@ MOBILE
     padding: 0;
     float: left;
     list-style: none;
+    text-align: center;
   }
   .grids-12 > li .items,
   .grids-12 > div .items {
@@ -1177,32 +1137,35 @@ MOBILE
 .primary-color {
   color: #181818;
 }
+.primary-color-1 {
+  color: #007eba;
+}
 .primary-color-2 {
-  color: #181818;
+  color: #76b130;
 }
 .primary-color-3 {
-  color: #7a7a7a;
+  color: #f1e303;
 }
 .primary-color-4 {
-  color: #cfcfcf;
+  color: #f4b903;
 }
 .primary-color-5 {
-  color: #ffffff;
+  color: #f37c07;
 }
 .bg-1 {
-  background-color: #101010;
+  background-color: #007eba;
 }
 .bg-2 {
-  background-color: #181818;
+  background-color: #76b130;
 }
 .bg-3 {
-  background-color: #7a7a7a;
+  background-color: #f1e303;
 }
 .bg-4 {
-  background-color: #cfcfcf;
+  background-color: #f4b903;
 }
 .bg-5 {
-  background-color: #ffffff;
+  background-color: #f37c07;
 }
 .links {
   color: #02519e;
@@ -1235,7 +1198,7 @@ MOBILE
   background-color: #e6e6e6;
 }
 #colors {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 .color-samples > li {
   border: dotted 1px #d9d9d9;
@@ -1268,5 +1231,5 @@ MOBILE
   text-align: center;
   margin: 20px 20px 80px;
   text-transform: uppercase;
-  min-height: 60px;
+  min-height: 80px;
 }
