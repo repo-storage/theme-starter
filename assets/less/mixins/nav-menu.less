@@ -5,15 +5,8 @@
 
   @line-height: @nav-height - 30 ;
   //margin-left: 20;
-  padding-top: 20px;
-  padding-bottom: 20px;
   padding-left: 20;
   background-color: @nav-background-color;
-  &.navbar {
-    margin-bottom: 0;
-    .border-radius(0);
-    border: none;
-  }
 
 
 
@@ -31,7 +24,7 @@
       left: auto;
     }
 
-   .border-radius(0);
+    .border-radius(0);
 
     li{
       height: @nav-height;
@@ -59,35 +52,35 @@
 
     //dropdowns
 
-      UL {
-        display: none;
-        position: absolute;
-        border: @nav-border;
-        padding-left: 0;
-      }
+    UL {
+      display: none;
+      position: absolute;
+      border: @nav-border;
+      padding-left: 0;
+    }
 
-      LI {
-        list-style: none;
-        text-align: center;
-        min-width: 100px;
-        color: @nav-color;
-        &:hover {
-          > UL {
-            display: block;
-            min-width: 150px;
-            background-color: @nav-background-color;
-            border: @nav-border;
-            border-top: none;
-            > LI {
+    LI {
+      list-style: none;
+      text-align: center;
+      min-width: 100px;
+      color: @nav-color;
+      &:hover {
+        > UL {
+          display: block;
+          min-width: 150px;
+          background-color: @nav-background-color;
+          border: @nav-border;
+          border-top: none;
+          > LI {
 
-              &:hover {
-                //background-color: darken(@nav-hover-background-color, 20%);
-                color: @nav-hover-color;
-              }
+            &:hover {
+              //background-color: darken(@nav-hover-background-color, 20%);
+              color: @nav-hover-color;
             }
-
           }
+
         }
+      }
 
 
 
