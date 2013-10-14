@@ -598,7 +598,9 @@ MOBILE
     font-size: 40px;
     font-size: 4rem;
   }
-  ASIDE H1 {
+  ASIDE H1,
+  #sidebar h1,
+  #sidebar h3 {
     font-size: 32px;
     font-size: 3.2rem;
   }
@@ -664,7 +666,9 @@ MOBILE
     font-size: 36px;
     font-size: 3.6rem;
   }
-  ASIDE H1 {
+  ASIDE H1,
+  #sidebar h1,
+  #sidebar h3 {
     font-size: 28px;
     font-size: 2.8rem;
   }
@@ -730,7 +734,9 @@ MOBILE
     font-size: 31px;
     font-size: 3.1rem;
   }
-  ASIDE H1 {
+  ASIDE H1,
+  #sidebar h1,
+  #sidebar h3 {
     font-size: 24px;
     font-size: 2.4rem;
   }
@@ -877,7 +883,9 @@ MOBILE
     font-size: 28px;
     font-size: 2.8rem;
   }
-  ASIDE H1 {
+  ASIDE H1,
+  #sidebar h1,
+  #sidebar h3 {
     font-size: 22px;
     font-size: 2.2rem;
   }
@@ -1024,7 +1032,9 @@ MOBILE
     font-size: 23px;
     font-size: 2.3rem;
   }
-  ASIDE H1 {
+  ASIDE H1,
+  #sidebar h1,
+  #sidebar h3 {
     font-size: 18px;
     font-size: 1.8rem;
   }
