@@ -546,7 +546,7 @@ SECTION#slideshows div {
   padding-bottom: 20px;
   color: #cfcfcf;
 }
-footer {
+#footer {
   text-align: center;
   margin-bottom: 0;
   background-color: #181818;
@@ -554,18 +554,22 @@ footer {
   min-height: 100px;
   padding: 80px;
 }
-footer > div {
+#footer > div {
   text-align: left;
 }
-footer .bio figure {
+#footer .bio figure {
   margin: 10px;
   float: left;
 }
-footer p,
-footer h1 {
+#footer p,
+#footer aside p {
+  font-size: 1.2;
+}
+#footer p,
+#footer h1 {
   color: #FFF;
 }
-footer address > span {
+#footer address > span {
   display: block;
   border-bottom: dotted 1px #d9d9d9;
   padding: 10px;
@@ -655,19 +659,19 @@ MOBILE
   }
   .default-text,
   .default-text p,
+  article p,
   .post p,
-  article p {
+  aside,
+  aside p {
     font-size: 20px;
     font-size: 2rem;
   }
   .regular-text,
   .regular-text p,
-  aside,
-  aside p,
   .post .readmore,
   .meta {
-    font-size: 15px;
-    font-size: 1.5rem;
+    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 /* Large desktop 1200 */
@@ -727,19 +731,19 @@ MOBILE
   }
   .default-text,
   .default-text p,
+  article p,
   .post p,
-  article p {
+  aside,
+  aside p {
     font-size: 17px;
     font-size: 1.7rem;
   }
   .regular-text,
   .regular-text p,
-  aside,
-  aside p,
   .post .readmore,
   .meta {
-    font-size: 13px;
-    font-size: 1.3rem;
+    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 /* Portrait tablet to landscape and desktop */
@@ -799,19 +803,19 @@ MOBILE
   }
   .default-text,
   .default-text p,
+  article p,
   .post p,
-  article p {
+  aside,
+  aside p {
     font-size: 15px;
     font-size: 1.5rem;
   }
   .regular-text,
   .regular-text p,
-  aside,
-  aside p,
   .post .readmore,
   .meta {
-    font-size: 12px;
-    font-size: 1.2rem;
+    font-size: 13px;
+    font-size: 1.3rem;
   }
   /* gird classes */
   .grids-2 {
@@ -952,19 +956,19 @@ MOBILE
   }
   .default-text,
   .default-text p,
+  article p,
   .post p,
-  article p {
+  aside,
+  aside p {
     font-size: 14px;
     font-size: 1.4rem;
   }
   .regular-text,
   .regular-text p,
-  aside,
-  aside p,
   .post .readmore,
   .meta {
-    font-size: 11px;
-    font-size: 1.1rem;
+    font-size: 12px;
+    font-size: 1.2rem;
   }
   /* gird classes */
   .grids-2 {
@@ -1105,19 +1109,19 @@ MOBILE
   }
   .default-text,
   .default-text p,
+  article p,
   .post p,
-  article p {
+  aside,
+  aside p {
     font-size: 11px;
     font-size: 1.1rem;
   }
   .regular-text,
   .regular-text p,
-  aside,
-  aside p,
   .post .readmore,
   .meta {
-    font-size: 9px;
-    font-size: 0.9rem;
+    font-size: 10px;
+    font-size: 1rem;
   }
   /* gird classes */
   .grids-2 {
