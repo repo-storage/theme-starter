@@ -504,6 +504,23 @@ SECTION#slideshows div {
 #sidebar {
   padding: 20px;
   margin-bottom: 20px;
+  font-size: 1.7;
+}
+#sidebar li,
+#sidebar ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+#sidebar ASIDE {
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+#sidebar ASIDE h1,
+#sidebar ASIDE h2,
+#sidebar ASIDE h3 {
+  margin-bottom: 10px;
+  border-bottom: dotted 1px #d9d9d9;
 }
 .side-box aside {
   padding: 20px;
@@ -554,6 +571,12 @@ footer p,
 footer h1 {
   color: #FFF;
 }
+footer li,
+footer ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
 /** valign 404 */
 .page-404 {
   text-align: center;
@@ -586,8 +609,8 @@ MOBILE
   }
   .mast-head,
   HEADER H1 {
-    font-size: 95px;
-    font-size: 9.5rem;
+    font-size: 106px;
+    font-size: 10.6rem;
   }
   SECTION H1 {
     font-size: 65px;
@@ -595,23 +618,27 @@ MOBILE
   }
   ARTICLE H1,
   .post H1 {
-    font-size: 40px;
-    font-size: 4rem;
+    font-size: 65px;
+    font-size: 6.5rem;
   }
   ASIDE H1,
   #sidebar h1,
-  #sidebar h3 {
-    font-size: 32px;
-    font-size: 3.2rem;
+  #sidebar h3,
+  ASIDE h3 {
+    font-size: 25px;
+    font-size: 2.5rem;
   }
-  FOOTER H1 {
+  FOOTER H1,
+  ASIDE h1,
+  ASIDE,
+  h3 {
     font-size: 25px;
     font-size: 2.5rem;
   }
   .mast-header,
   .mast-header H1 {
-    font-size: 95px;
-    font-size: 9.5rem;
+    font-size: 106px;
+    font-size: 10.6rem;
   }
   .titles,
   .titles H1 {
@@ -646,60 +673,64 @@ MOBILE
   aside p,
   .post .readmore,
   .meta {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 15px;
+    font-size: 1.5rem;
   }
 }
 /* Large desktop 1200 */
 @media (min-width: 1200px) {
   .mast-head,
   HEADER H1 {
-    font-size: 72px;
-    font-size: 7.2rem;
+    font-size: 89px;
+    font-size: 8.9rem;
   }
   SECTION H1 {
-    font-size: 58px;
-    font-size: 5.8rem;
+    font-size: 55px;
+    font-size: 5.5rem;
   }
   ARTICLE H1,
   .post H1 {
-    font-size: 36px;
-    font-size: 3.6rem;
+    font-size: 55px;
+    font-size: 5.5rem;
   }
   ASIDE H1,
   #sidebar h1,
-  #sidebar h3 {
-    font-size: 28px;
-    font-size: 2.8rem;
+  #sidebar h3,
+  ASIDE h3 {
+    font-size: 21px;
+    font-size: 2.1rem;
   }
-  FOOTER H1 {
-    font-size: 22px;
-    font-size: 2.2rem;
+  FOOTER H1,
+  ASIDE h1,
+  ASIDE,
+  h3 {
+    font-size: 21px;
+    font-size: 2.1rem;
   }
   .mast-header,
   .mast-header H1 {
-    font-size: 72px;
-    font-size: 7.2rem;
+    font-size: 89px;
+    font-size: 8.9rem;
   }
   .titles,
   .titles H1 {
-    font-size: 58px;
-    font-size: 5.8rem;
+    font-size: 55px;
+    font-size: 5.5rem;
   }
   .headlines,
   .headlines H1 {
-    font-size: 36px;
-    font-size: 3.6rem;
+    font-size: 34px;
+    font-size: 3.4rem;
   }
   .sub-headlines,
   .sub-headlines H1 {
-    font-size: 28px;
-    font-size: 2.8rem;
+    font-size: 27px;
+    font-size: 2.7rem;
   }
   .paragraph-text,
   .primary-text {
-    font-size: 22px;
-    font-size: 2.2rem;
+    font-size: 21px;
+    font-size: 2.1rem;
   }
   .default-text,
   .default-text p,
@@ -714,16 +745,16 @@ MOBILE
   aside p,
   .post .readmore,
   .meta {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 13px;
+    font-size: 1.3rem;
   }
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
   .mast-head,
   HEADER H1 {
-    font-size: 65px;
-    font-size: 6.5rem;
+    font-size: 80px;
+    font-size: 8rem;
   }
   SECTION H1 {
     font-size: 50px;
@@ -731,23 +762,27 @@ MOBILE
   }
   ARTICLE H1,
   .post H1 {
-    font-size: 31px;
-    font-size: 3.1rem;
+    font-size: 50px;
+    font-size: 5rem;
   }
   ASIDE H1,
   #sidebar h1,
-  #sidebar h3 {
-    font-size: 24px;
-    font-size: 2.4rem;
+  #sidebar h3,
+  ASIDE h3 {
+    font-size: 19px;
+    font-size: 1.9rem;
   }
-  FOOTER H1 {
+  FOOTER H1,
+  ASIDE h1,
+  ASIDE,
+  h3 {
     font-size: 19px;
     font-size: 1.9rem;
   }
   .mast-header,
   .mast-header H1 {
-    font-size: 65px;
-    font-size: 6.5rem;
+    font-size: 80px;
+    font-size: 8rem;
   }
   .titles,
   .titles H1 {
@@ -773,8 +808,8 @@ MOBILE
   .default-text p,
   .post p,
   article p {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 15px;
+    font-size: 1.5rem;
   }
   .regular-text,
   .regular-text p,
@@ -871,8 +906,8 @@ MOBILE
 @media (max-width: 767px) {
   .mast-head,
   HEADER H1 {
-    font-size: 56px;
-    font-size: 5.6rem;
+    font-size: 72px;
+    font-size: 7.2rem;
   }
   SECTION H1 {
     font-size: 45px;
@@ -880,23 +915,27 @@ MOBILE
   }
   ARTICLE H1,
   .post H1 {
-    font-size: 28px;
-    font-size: 2.8rem;
+    font-size: 45px;
+    font-size: 4.5rem;
   }
   ASIDE H1,
   #sidebar h1,
-  #sidebar h3 {
-    font-size: 22px;
-    font-size: 2.2rem;
+  #sidebar h3,
+  ASIDE h3 {
+    font-size: 17px;
+    font-size: 1.7rem;
   }
-  FOOTER H1 {
+  FOOTER H1,
+  ASIDE h1,
+  ASIDE,
+  h3 {
     font-size: 17px;
     font-size: 1.7rem;
   }
   .mast-header,
   .mast-header H1 {
-    font-size: 56px;
-    font-size: 5.6rem;
+    font-size: 72px;
+    font-size: 7.2rem;
   }
   .titles,
   .titles H1 {
@@ -931,8 +970,8 @@ MOBILE
   aside p,
   .post .readmore,
   .meta {
-    font-size: 12px;
-    font-size: 1.2rem;
+    font-size: 11px;
+    font-size: 1.1rem;
   }
   /* gird classes */
   .grids-2 {
@@ -1020,8 +1059,8 @@ MOBILE
 @media (max-width: 480px) {
   .mast-head,
   HEADER H1 {
-    font-size: 45px;
-    font-size: 4.5rem;
+    font-size: 59px;
+    font-size: 5.9rem;
   }
   SECTION H1 {
     font-size: 37px;
@@ -1029,23 +1068,27 @@ MOBILE
   }
   ARTICLE H1,
   .post H1 {
-    font-size: 23px;
-    font-size: 2.3rem;
+    font-size: 37px;
+    font-size: 3.7rem;
   }
   ASIDE H1,
   #sidebar h1,
-  #sidebar h3 {
-    font-size: 18px;
-    font-size: 1.8rem;
+  #sidebar h3,
+  ASIDE h3 {
+    font-size: 14px;
+    font-size: 1.4rem;
   }
-  FOOTER H1 {
+  FOOTER H1,
+  ASIDE h1,
+  ASIDE,
+  h3 {
     font-size: 14px;
     font-size: 1.4rem;
   }
   .mast-header,
   .mast-header H1 {
-    font-size: 45px;
-    font-size: 4.5rem;
+    font-size: 59px;
+    font-size: 5.9rem;
   }
   .titles,
   .titles H1 {
@@ -1071,8 +1114,8 @@ MOBILE
   .default-text p,
   .post p,
   article p {
-    font-size: 12px;
-    font-size: 1.2rem;
+    font-size: 11px;
+    font-size: 1.1rem;
   }
   .regular-text,
   .regular-text p,
@@ -1080,8 +1123,8 @@ MOBILE
   aside p,
   .post .readmore,
   .meta {
-    font-size: 11px;
-    font-size: 1.1rem;
+    font-size: 9px;
+    font-size: 0.9rem;
   }
   /* gird classes */
   .grids-2 {

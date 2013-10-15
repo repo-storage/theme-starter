@@ -12,14 +12,14 @@
    }
 
   ARTICLE H1, .post H1 {
-    .font-size(@headlines) ;
+    .font-size(@titles) ;
   }
 
-  ASIDE H1, #sidebar h1, #sidebar h3 {
-    .font-size(@sub-headlines);
+  ASIDE H1, #sidebar h1, #sidebar h3, ASIDE h3 {
+    .font-size(@primary-text);
   }
 
-  FOOTER H1 {
+  FOOTER H1, ASIDE h1, ASIDE, h3 {
      .font-size(@primary-text);
   }
 
@@ -56,22 +56,22 @@
 
 
 .golden-1600() {
-     .golden(9.5,6.5,4.0,3.2,2.5,2.0,1.6);
+    .golden(10.6,6.5,4.0,3.2,2.5,2.0,1.5);
 }
 
 .golden-1270() {
-    .golden(7.2,5.8,3.6,2.8,2.2,1.7,1.4);
+    .golden(8.9,5.5,3.4,2.7,2.1,1.7,1.3);
 }
 
 .golden-970() {
-  .golden(6.5,5.0,3.1,2.4,1.9,1.6);
+   .golden(8.0,5.0,3.1,2.4,1.9,1.5,1.2);
 }
 
 .golden-720() {
-  .golden(5.6,4.5,2.8,2.2,1.7,1.4,1.2)
+   .golden(7.2,4.5,2.8,2.2,1.7,1.4,1.1)
 }
 
 .golden-480() {
-  .golden(4.5,3.7,2.3,1.8,1.4,1.2,1.1);
+  .golden(5.9,3.7,2.3,1.8,1.4,1.1,0.9);
 }
 
