@@ -505,6 +505,17 @@ SECTION#slideshows div {
   padding: 20px;
   margin-bottom: 20px;
 }
+#sidebar ASIDE h1,
+#sidebar ASIDE h1,
+#sidebar ASIDE h3 {
+  border-bottom: dotted 1px #d9d9d9;
+}
+#sidebar ASIDE ul {
+  padding: 0;
+}
+#sidebar ASIDE li {
+  list-style: none;
+}
 .side-box aside {
   padding: 20px;
 }
