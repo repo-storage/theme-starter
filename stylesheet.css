@@ -504,23 +504,6 @@ SECTION#slideshows div {
 #sidebar {
   padding: 20px;
   margin-bottom: 20px;
-  font-size: 1.7;
-}
-#sidebar li,
-#sidebar ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-#sidebar ASIDE {
-  margin-bottom: 0px;
-  padding-bottom: 10px;
-}
-#sidebar ASIDE h1,
-#sidebar ASIDE h2,
-#sidebar ASIDE h3 {
-  margin-bottom: 10px;
-  border-bottom: dotted 1px #d9d9d9;
 }
 .side-box aside {
   padding: 20px;
@@ -571,11 +554,10 @@ footer p,
 footer h1 {
   color: #FFF;
 }
-footer li,
-footer ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
+footer address > span {
+  display: block;
+  border-bottom: dotted 1px #d9d9d9;
+  padding: 10px;
 }
 /** valign 404 */
 .page-404 {
