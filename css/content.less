@@ -64,14 +64,39 @@
 
 
   /* SIDEBAR */
-  #sidebar{
+
+
+  #sidebar {
 
   }
 
+
+
   #sidebar {
-//    border-bottom: @border-dotted;
+
+    //    border-bottom: @border-dotted;
     padding: @padding + 10;
     margin-bottom: @margins + 10;
+    font-size: @default-text;
+
+    li, ul  {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    ASIDE {
+      margin-bottom: @margins - 10;
+      padding-bottom: @padding;
+
+      h1, h2, h3 {
+        margin-bottom: @margins;
+        border-bottom: @border-dotted;
+      }
+    }
+
+
+
   }
 
 
@@ -106,6 +131,13 @@
     p, h1 {
       color: #FFF;
     }
+
+    li, ul  {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
   }
 
   /** valign 404 */
