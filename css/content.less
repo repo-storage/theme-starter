@@ -64,17 +64,23 @@
 
 
   /* SIDEBAR */
-  #sidebar{
-
-  }
 
   #sidebar {
-//    border-bottom: @border-dotted;
     padding: @padding + 10;
     margin-bottom: @margins + 10;
+
+    ASIDE {
+      h1,h1,h3 {
+        border-bottom: @border-dotted;
+      }
+      ul {
+        padding: 0;
+      }
+      li {
+         list-style: none;
+      }
+    }
   }
-
-
 
   .side-box{
     //padding: @padding + 10;
@@ -106,13 +112,22 @@
     p, h1 {
       color: #FFF;
     }
+
+    address {
+      >span {
+        display: block;
+        border-bottom: @border-dotted;
+        padding: @padding;
+      }
+    }
+
+
+
   }
 
   /** valign 404 */
   .page-404 {
-
       .v-center(600px);
-
   }
 
 }
