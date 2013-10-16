@@ -103,7 +103,6 @@ jQuery(document).ready(function($){
                 $('#top-nav').transition({ opacity: 0.95});
             }
 
-
         }, { offset: 0});
     }
 
