@@ -88,15 +88,17 @@ jQuery(document).ready(function($){
 
     var top_nav = $('#top-nav').data('trigger');
     if(top_nav) {
-        $('body').addClass('top-nav-padding');
-        $('#top-nav').addClass('navbar-fixed-top');
+        //$('body').addClass('top-nav-padding');
+
         $('#nav-separator').waypoint(function(direction){
             console.log("trigger " + top_nav +' ' + direction);
             if(direction == 'down'){
+                $('#top-nav').addClass('navbar-fixed-top');
                 $('#top-nav').transition({ opacity: 0.5});
                 $('#top-nav').transition({ opacity: 0.95});
             } else if(direction == 'up') {
-//                $('#top-nav').removeClass('navbar-fixed-top');
+                $('body').removeClass('top-nav-padding');
+                $('#top-nav').removeClass('navbar-fixed-top');
                 $('#top-nav').transition({ opacity: 0.5});
                 $('#top-nav').transition({ opacity: 0.95});
             }

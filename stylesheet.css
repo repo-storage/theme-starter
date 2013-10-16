@@ -44,7 +44,6 @@ BODY {
   color: #181818;
   /** used to offset fixed top navs  */
 
-  padding-top: 0;
 }
 BODY > SECTION {
   padding-top: 60px;
@@ -268,6 +267,7 @@ img {
 
   padding-left: 20;
   background-color: #181818;
+  top: auto;
 }
 #top-nav .brand,
 #top-nav .navbar-brand {
