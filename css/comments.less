@@ -1,11 +1,34 @@
-.comments() {
+.comments(@width:90%) {
 
-  #comment {
+
+
+  #comments {
+    padding-top: @section-padding - 20;
+    input[type="text"] {
+      width: @width;
+    }
+
+    textarea {
+       width: @width;
+    }
+
+    code {
+      white-space: normal;
+      width: @width;
+    }
+
+    h1,h2,h3 {
+
+      margin-bottom: @margins;
+      padding-bottom: @padding;
+    }
+
+    aside {
+      border-bottom: @border-dotted;
+      margin-bottom: @margins;
+      padding-bottom: @padding;
+    }
 
   }
-
-
-
-
 
 }
