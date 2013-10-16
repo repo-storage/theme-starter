@@ -593,6 +593,30 @@ SECTION#slideshows div {
   display: inline-block;
   vertical-align: middle;
 }
+#comments {
+  padding-top: 60px;
+}
+#comments input[type="text"] {
+  width: 90%;
+}
+#comments textarea {
+  width: 90%;
+}
+#comments code {
+  white-space: normal;
+  width: 90%;
+}
+#comments h1,
+#comments h2,
+#comments h3 {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+#comments aside {
+  border-bottom: dotted 1px #d9d9d9;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
 .form-horizontal label {
   display: block;
 }
@@ -617,6 +641,10 @@ MOBILE
   .post H1 {
     font-size: 65px;
     font-size: 6.5rem;
+  }
+  #comments H1 {
+    font-size: 32px;
+    font-size: 3.2rem;
   }
   ASIDE H1,
   #sidebar h1,
@@ -690,6 +718,10 @@ MOBILE
     font-size: 55px;
     font-size: 5.5rem;
   }
+  #comments H1 {
+    font-size: 27px;
+    font-size: 2.7rem;
+  }
   ASIDE H1,
   #sidebar h1,
   #sidebar h3,
@@ -761,6 +793,10 @@ MOBILE
   .post H1 {
     font-size: 50px;
     font-size: 5rem;
+  }
+  #comments H1 {
+    font-size: 24px;
+    font-size: 2.4rem;
   }
   ASIDE H1,
   #sidebar h1,
@@ -915,6 +951,10 @@ MOBILE
     font-size: 45px;
     font-size: 4.5rem;
   }
+  #comments H1 {
+    font-size: 22px;
+    font-size: 2.2rem;
+  }
   ASIDE H1,
   #sidebar h1,
   #sidebar h3,
@@ -1067,6 +1107,10 @@ MOBILE
   .post H1 {
     font-size: 37px;
     font-size: 3.7rem;
+  }
+  #comments H1 {
+    font-size: 18px;
+    font-size: 1.8rem;
   }
   ASIDE H1,
   #sidebar h1,
