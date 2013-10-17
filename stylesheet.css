@@ -44,7 +44,6 @@ BODY {
   color: #181818;
   /** used to offset fixed top navs  */
 
-  padding-top: 0;
 }
 BODY > SECTION {
   padding-top: 60px;
@@ -268,6 +267,7 @@ img {
 
   padding-left: 20;
   background-color: #181818;
+  top: auto;
 }
 #top-nav .brand,
 #top-nav .navbar-brand {
@@ -610,6 +610,24 @@ SECTION#slideshows div {
 .page-404 > img {
   display: inline-block;
   vertical-align: middle;
+}
+#top-link {
+  display: none;
+  position: fixed;
+  right: 5px;
+  bottom: 150px;
+  right: 30px;
+  color: #232222;
+  font-weight: bold;
+  text-decoration: none;
+  border: 0px solid #FFFFFF;
+  /*[disabled]background:#CCCCCC;*/
+
+  padding: 20px;
+  font-family: EntypoRegular, sans-serif;
+  font-size: 36px;
+  font-size: 3.6rem;
+  z-index: 9999;
 }
 #comments {
   padding-top: 60px;
