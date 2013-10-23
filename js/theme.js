@@ -106,5 +106,12 @@ jQuery(document).ready(function($){
         }, { offset: 0});
     }
 
+    $('.nav-button').click(function(){
+       var menu = $(this).data('nav-menu');
+       // console.log(menu);
+       // $(menu).toggleClass('display');
+       $(menu).slideToggle();
+    });
+
 
 })
