@@ -1755,14 +1755,7 @@ img {
 #content .container {
   min-height: 400px;
 }
-.top-nav-padding {
-  padding-top: 80px;
-}
 #top-nav {
-  /**
- * Nav menu for bootstrap 3.0 navs
- */
-
   padding-left: 20;
   background-color: #181818;
   top: auto;
@@ -2136,9 +2129,6 @@ SECTION#slideshows div {
 .form-horizontal label {
   display: block;
 }
-/**
-MOBILE
-**/
 /* Large desktop 1600 */
 @media (min-width: 1600px) {
   .container {
@@ -2854,6 +2844,9 @@ MOBILE
 .color-samples {
   display: block;
   width: 100%;
+}
+.top-nav-padding {
+  padding-top: 80px;
 }
 /*----prototyping----*/
 .section-seperator {
