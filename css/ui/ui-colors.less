@@ -1,36 +1,61 @@
-
 //.text-color {
 //  #ui-colors > .backgrounds(@background-color,@background-color-2);
 //}
- #ui-colors {
+#ui-colors {
 
+  .links(@color:@font-color,@link:@font-color,@hover:@font-color,@active: @font-color,@visited:@font-color) {
 
+    color: @color;
+    &:active {
+      color: @active;
+    }
+    &:visited {
+      color: @visited;
+    }
 
-   .links(@color:@font-color,@link:@font-color,@hover:@font-color,@active: @font-color,@visited:@font-color){
+    &:hover, &:focus {
+      color: @hover;
+    }
+  }
 
-     color: @color;
-     &:active{
-       color:@active;
-     }
-     &:visited{
-       color:@visited;
-     }
+  .backgrounds(@background:@background-color,@hover:'') {
+    background-color: @background;
+    .hover(@hover);
+    .hover(@hover) when (iscolor(@hover)) {
+      &:hover {
+        background-color: @hover;
+      }
+    }
+  }
 
-     &:hover, &:focus{
-       color: @hover;
-     }
- }
+  .link-color(@color:@link-color) {
+    a {
+      color: @color;
+    }
+  }
 
-   .backgrounds(@background:@background-color,@hover:''){
+  .active-color(@color:@link-color) {
+    a:active {
+      color: @color;
+    }
+  }
 
-     background-color: @background;
-     .hover(@hover);
-     .hover(@hover) when (iscolor(@hover)){
-       &:hover {
-         background-color: @hover;
-       }
-     }
-   }
+  .visited-color(@color:@link-color) {
+    a:visited {
+      color: @color;
+    }
+  }
+
+  .hover-color(@color:@link-color) {
+    a:hover, a:focus {
+      color: @color;
+    }
+  }
+
+  .font-color(@color:@font-color) {
+    color: @color;
+  }
+
 }
 
 

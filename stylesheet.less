@@ -170,7 +170,8 @@
 @import "css/grids";
 @import "css/patterns";
 @import "css/comments";
-@import "fonts/font-awesome/less/font-awesome";
+//@import "fonts/font-awesome/less/font-awesome";
+
 @import "css/ui/ui-colors";
 @import "css/ui/ui-nav";
 
@@ -216,17 +217,15 @@
 /* MENU */
 .menu {
 
-  #ui-nav > .mobile ();
+  #ui-nav > .dropdown();
   #ui-nav > .ul();
-  li {
-    //@color:@font-color,@link:@font-color,@hover:@font-color,@active: @font-color,@visited:@font-color
-    #ui-colors > .links(#fff, #fff, #fff);
-  }
+  #ui-nav > .colors();
   //height, subnav-height
   color: @nav-color;
   //@background-color:@nav-background-color,@hover-color: @nav-hover-background-color
   #ui-nav > .background-colors();
-
+  #ui-nav > .font-color(#fff) ;
+  #ui-nav > .colors(#fff,#fff,#fff,#fff,#fff) ;
 }
 
 

@@ -2,7 +2,7 @@
 #ui-nav {
   /* nav menu */
   .ul(@height:@nav-height,@subnav-height:@sub-nav-height) {
-    &{
+    & {
       padding: 0;
     }
     nav {
@@ -11,8 +11,7 @@
       position: relative;
       z-index: 9999;
 
-
-      .nav-button{
+      .nav-button {
         display: none;
         border: none;
         background-color: transparent;
@@ -26,10 +25,9 @@
         //subnav
         .subnav();
 
-        .display{
+        .display {
           display: block;
         }
-
 
       }
 
@@ -42,7 +40,6 @@
       }
     }
 
-
   }
 
   .nav-menu() {
@@ -53,7 +50,7 @@
     .base-transition(all, .2s, ease-in-out);
     li {
       //width: 100%;
-      .heights(@height) ;
+      .heights(@height);
       text-align: center;
       box-sizing: border-box;
       padding-left: 20px;
@@ -90,98 +87,129 @@
 
   }
 
-.mobile(){
+  .dropdown-nav() {
 
-  //background-color: transparent;
+    nav {
+      width: auto;
 
+      .nav-button {
+        display: block;
+        color: @nav-color;
+        &:hover, &:focus {
+          border: none;
+          background-color: @nav-background-color;
+        }
+      }
 
-       &.dropdown  {
+      li {
+        width: 100%;
+      }
 
-         nav {
-           width: auto;
+      & li:hover ul {
+        display: block;
+      }
 
-
-         .nav-button{
-           display: block;
-           color: @nav-color;
-           &:hover, &:focus {
-              border: none;
-             background-color:@nav-background-color;
-           }
-         }
-
-          li{
-           width: 100%;
-         }
-
-         & li:hover ul {
-           display: block;
-         }
-
-         > ul {
-           width: 250px;
-           position: absolute;
-           z-index: 9999;
-           display: none;
-           //.base-transition(all, .2s, ease-in-out);
-         }
-         }
-
-
-
-     }
-
-  ul {
-    z-index: 9999;
+      > ul {
+        width: 250px;
+        position: absolute;
+        z-index: 9999;
+        display: none;
+        //.base-transition(all, .2s, ease-in-out);
+      }
+    }
   }
-}
+
+  .dropdown() {
+
+    //background-color: transparent;
+    &.dropdown {
+
+      .dropdown-nav;
+
+    }
+
+    ul {
+      z-index: 9999;
+    }
+  }
 
   .heights(@height) {
     height: @height;
     line-height: @height;
   }
 
-  .colors() {
+  .colors(@color:@font-color,@link:@font-color,@hover:@font-color,@active: @font-color,@visited:@font-color) {
     li {
-      #ui-colors > .link();
-    }
 
+      #ui-colors > .links(@color, @link, @hover, @active, @visited);
+
+    }
   }
 
   .background-colors(@background-color:@nav-background-color,@hover-color: @nav-hover-background-color) {
     li {
       #ui-colors > .backgrounds(@background-color);
       &:hover {
-        #ui-colors > .backgrounds(@hover-color);
+        #ui-colors > .backgrounds(@nav-background-color);
       }
     }
   }
 
+  .link-color(@color:@link-color) {
+    li a {
+      color: @color;
+    }
+  }
+
+  .active-color(@color:@link-color) {
+    li a:active {
+      color: @color;
+    }
+  }
+
+  .visited-color(@color:@link-color) {
+    li a:visited {
+      color: @color;
+    }
+  }
+
+  .hover-color(@color:@link-color) {
+    li a:hover, li a:focus {
+      color: @color;
+    }
+  }
+
+  .font-color(@color:@font-color) {
+    li {
+      color: @color;
+    }
+  }
+
+
 }
 
 //-----------------starter menu horizontal--------------------
-//
-//<div class="container test">
-//    <nav class="">
-//        <ul>
-//            <li>Menu ----</li>
-//            <li>Menu ----</li>
-//            <li>Menu ----</li>
-//            <li>sub Menu ----
+//<div class="container menu { dropdown bar }">
+//<nav class="">
+//<button class="nav-button" data-nav-menu="#test-menu"><i class="fa fa-reorder"></i> </button>
+//<ul id="test-menu">
+//<li>Menu ----</li>
+//<li>Menu ----</li>
+//<li>Menu ----</li>
+//<li>sub Menu ----
 //<ul>
-//                    <li>SUB------</li>
-//                    <li>SUB------</li>
-//                    <li>SUB------</li>
-//                    <li>SUB------</li>
-//                    <li>SUB------</li>
-//                </ul>
-//            </li>
-//        </ul>
-//    </nav>
+//<li>SUB------</li>
+//<li>SUB------</li>
+//<li>SUB------</li>
+//<li>SUB------</li>
+//<li>SUB------</li>
+//</ul>
+//</li>
+//</ul>
+//</nav>
 //</div>
 
 //---------------starter less -------------------------
-
 
 //.test {
 //  padding: 0;
