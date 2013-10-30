@@ -2862,157 +2862,116 @@ SECTION#slideshows div {
 /* MENU */
 .menu {
   color: #e1e1e1;
-  background-color: #ffffff;
-  color: #181818;
-}
-.menu {
-  padding: 0;
-}
-.menu nav {
-  width: 100%;
-  position: relative;
-  z-index: 9999;
-}
-.menu nav .nav-button {
-  display: none;
-}
-.menu nav ul {
-  /* nav */
-
-  margin-bottom: 0;
-  padding: 0;
-  list-style: none;
-}
-.menu nav ul li {
-  height: 80px;
-  line-height: 80px;
-  min-width: 120px;
-  text-align: center;
-  box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.menu nav ul > li {
-  position: relative;
-  display: block;
-  float: left;
-}
-.menu nav ul > li:hover ul {
-  display: block;
-  -webkit-transition: all 1s linear;
-  -moz-transition: all 1s linear;
-  -o-transition: all 1s linear;
-  -ms-transition: all 1s linear;
-  transition: all 1s linear;
-}
-.menu nav ul li ul {
-  /* sub-nav */
-
-  position: absolute;
-  display: none;
-  left: 0;
-}
-.menu nav ul li ul li {
-  display: block;
-  height: 60px;
-  line-height: 60px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.menu nav ul .display {
-  display: block;
-}
-.menu {
-  padding: 0;
-}
-.menu nav {
-  width: 100%;
-  position: relative;
-  z-index: 9999;
-}
-.menu nav .nav-button {
-  display: none;
-}
-.menu nav ul {
-  /* nav */
-
-  margin-bottom: 0;
-  padding: 0;
-  list-style: none;
-}
-.menu nav ul li {
-  height: 80px;
-  line-height: 80px;
-  min-width: 120px;
-  text-align: center;
-  box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.menu nav ul > li {
-  position: relative;
-  display: block;
-  float: left;
-}
-.menu nav ul > li:hover ul {
-  display: block;
-  -webkit-transition: all 1s linear;
-  -moz-transition: all 1s linear;
-  -o-transition: all 1s linear;
-  -ms-transition: all 1s linear;
-  transition: all 1s linear;
-}
-.menu nav ul li ul {
-  /* sub-nav */
-
-  position: absolute;
-  display: none;
-  left: 0;
-}
-.menu nav ul li ul li {
-  display: block;
-  height: 60px;
-  line-height: 60px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.menu nav ul .display {
-  display: block;
-}
-.menu li {
-  background-color: #181818;
-}
-.menu li:hover {
-  background-color: #323232;
 }
 .menu.dropdown nav {
   width: auto;
 }
 .menu.dropdown nav .nav-button {
   display: block;
+  color: #e1e1e1;
+}
+.menu.dropdown nav .nav-button:hover,
+.menu.dropdown nav .nav-button:focus {
+  border: none;
+  background-color: #181818;
 }
 .menu.dropdown nav li {
   width: 100%;
 }
-.menu.dropdown navli:hover ul {
+.menu.dropdown nav li:hover ul {
   display: block;
 }
 .menu.dropdown nav > ul {
-  max-width: 200px;
+  width: 250px;
   position: absolute;
   z-index: 9999;
   display: none;
 }
-.menu.dropdown ul {
+.menu ul {
   z-index: 9999;
 }
-.menu:active {
+.menu {
+  padding: 0;
+}
+.menu nav {
+  width: 100%;
+  position: relative;
+  z-index: 9999;
+}
+.menu nav .nav-button {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+.menu nav ul {
+  /* nav */
+
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.menu nav ul li {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.menu nav ul > li {
+  position: relative;
+  display: block;
+}
+.menu nav ul > li:hover ul {
+  display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.menu nav ul li ul {
+  /* sub-nav */
+
+  position: absolute;
+  display: none;
+  left: 0;
+  width: 100%;
+}
+.menu nav ul li ul li {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.menu nav ul .display {
+  display: block;
+}
+.menu.bar li {
+  float: left;
+}
+.menu li {
+  color: #ffffff;
+}
+.menu li:active {
   color: #181818;
 }
-.menu:visited {
+.menu li:visited {
   color: #181818;
 }
-.menu:hover,
-.menu:focus {
-  color: #181818;
+.menu li:hover,
+.menu li:focus {
+  color: #ffffff;
+}
+.menu li {
+  background-color: #181818;
+}
+.menu li:hover {
+  background-color: #323232;
 }

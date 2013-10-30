@@ -14,6 +14,8 @@
 
       .nav-button{
         display: none;
+        border: none;
+        background-color: transparent;
       }
 
       ul {
@@ -27,10 +29,19 @@
         .display{
           display: block;
         }
+
+
       }
 
     }
     //--------------------
+
+    &.bar {
+      li {
+        float: left;
+      }
+    }
+
 
   }
 
@@ -39,25 +50,22 @@
     margin-bottom: 0;
     padding: 0;
     list-style: none;
-
+    .base-transition(all, .2s, ease-in-out);
     li {
-
+      //width: 100%;
       .heights(@height) ;
-      min-width: 120px;
       text-align: center;
       box-sizing: border-box;
       padding-left: 20px;
       padding-right: 20px;
-
     }
 
     > li {
       position: relative;
       display: block;
-      float: left;
       &:hover ul {
         display: block;
-        .base-transition;
+        .base-transition(all, .2s, ease-in-out);
       }
     }
 
@@ -70,7 +78,7 @@
       position: absolute;
       display: none;
       left: 0;
-
+      width: 100%;
       li {
         display: block;
         .heights(@subnav-height);
@@ -86,29 +94,41 @@
 
   //background-color: transparent;
 
-     nav {
 
-       width: auto;
+       &.dropdown  {
+
+         nav {
+           width: auto;
 
 
-       .nav-button{
-         display: block;
-       }
+         .nav-button{
+           display: block;
+           color: @nav-color;
+           &:hover, &:focus {
+              border: none;
+             background-color:@nav-background-color;
+           }
+         }
 
-       li{
-         width: 100%;
-       }
+          li{
+           width: 100%;
+         }
 
-       &li:hover ul {
-         display: block;
-       }
+         & li:hover ul {
+           display: block;
+         }
 
-       > ul {
-         max-width: 200px;
-         position: absolute;
-         z-index: 9999;
-         display: none;
-       }
+         > ul {
+           width: 250px;
+           position: absolute;
+           z-index: 9999;
+           display: none;
+           //.base-transition(all, .2s, ease-in-out);
+         }
+         }
+
+
+
      }
 
   ul {
