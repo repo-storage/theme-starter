@@ -2858,24 +2858,32 @@ SECTION#slideshows div {
   text-transform: uppercase;
   min-height: 80px;
 }
-.test {
-  padding: 0;
-  background-color: #a3a3a3;
+/* UI-ELEMENTS *****************/
+/* MENU */
+.menu {
+  color: #e1e1e1;
+  background-color: #ffffff;
+  color: #181818;
 }
-.test nav {
+.menu {
+  padding: 0;
+}
+.menu nav {
   width: 100%;
   position: relative;
   z-index: 9999;
 }
-.test nav ul {
+.menu nav .nav-button {
+  display: none;
+}
+.menu nav ul {
   /* nav */
 
   margin-bottom: 0;
   padding: 0;
   list-style: none;
 }
-.test nav ul li {
-  width: 100%;
+.menu nav ul li {
   height: 80px;
   line-height: 80px;
   min-width: 120px;
@@ -2884,12 +2892,12 @@ SECTION#slideshows div {
   padding-left: 20px;
   padding-right: 20px;
 }
-.test nav ul > li {
+.menu nav ul > li {
   position: relative;
   display: block;
   float: left;
 }
-.test nav ul > li:hover ul {
+.menu nav ul > li:hover ul {
   display: block;
   -webkit-transition: all 1s linear;
   -moz-transition: all 1s linear;
@@ -2897,43 +2905,114 @@ SECTION#slideshows div {
   -ms-transition: all 1s linear;
   transition: all 1s linear;
 }
-.test nav ul li ul {
+.menu nav ul li ul {
   /* sub-nav */
 
   position: absolute;
   display: none;
   left: 0;
 }
-.test nav ul li ul li {
+.menu nav ul li ul li {
   display: block;
   height: 60px;
   line-height: 60px;
-  min-width: 120px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
   box-sizing: border-box;
 }
-.test nav ul .display {
+.menu nav ul .display {
   display: block;
 }
-.test li {
-  background-color: #bebebe;
+.menu {
+  padding: 0;
 }
-.test li:hover {
+.menu nav {
+  width: 100%;
+  position: relative;
+  z-index: 9999;
+}
+.menu nav .nav-button {
+  display: none;
+}
+.menu nav ul {
+  /* nav */
+
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu nav ul li {
+  height: 80px;
+  line-height: 80px;
+  min-width: 120px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.menu nav ul > li {
+  position: relative;
+  display: block;
+  float: left;
+}
+.menu nav ul > li:hover ul {
+  display: block;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  transition: all 1s linear;
+}
+.menu nav ul li ul {
+  /* sub-nav */
+
+  position: absolute;
+  display: none;
+  left: 0;
+}
+.menu nav ul li ul li {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.menu nav ul .display {
+  display: block;
+}
+.menu li {
+  background-color: #181818;
+}
+.menu li:hover {
   background-color: #323232;
 }
-.test li:hover {
-  color: #fff;
+.menu.dropdown nav {
+  width: auto;
 }
-.test navhover ul {
+.menu.dropdown nav .nav-button {
   display: block;
 }
-.test nav > ul {
+.menu.dropdown nav li {
+  width: 100%;
+}
+.menu.dropdown navli:hover ul {
+  display: block;
+}
+.menu.dropdown nav > ul {
   max-width: 200px;
   position: absolute;
   z-index: 9999;
   display: none;
 }
-.test ul {
+.menu.dropdown ul {
   z-index: 9999;
+}
+.menu:active {
+  color: #181818;
+}
+.menu:visited {
+  color: #181818;
+}
+.menu:hover,
+.menu:focus {
+  color: #181818;
 }

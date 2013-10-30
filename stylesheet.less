@@ -213,17 +213,23 @@
   min-height: @nav-height;
   
 }
+/* UI-ELEMENTS *****************/
 
-.test {
-  padding: 0;
-  #ui-nav > .ul;
-  #ui-colors > .backgrounds(#a3a3a3);
-  #ui-nav > .background-colors(#bebebe);
-  li:hover {
-    color: #fff;
-  }
+/* MENU */
+.menu{
+  //height, subnav-height
+   color: @nav-color;
+    #ui-nav > .ul();
+    #ui-nav > .ul;
+    #ui-colors > .backgrounds();
+    #ui-nav > .background-colors();
+    &.dropdown{
+      #ui-nav > .mobile ();
+    }
+    &.list {
 
-  #ui-nav > .mobile ();
-
+    }
+    #ui-colors > .links();
 }
+
 
